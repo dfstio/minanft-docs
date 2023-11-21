@@ -27,7 +27,7 @@ const config: Config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en','it'],
+    locales: ['en'],
   },
   plugins: [
     [
@@ -69,7 +69,7 @@ const config: Config = {
           position: 'left',
           label: 'Docs',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        //{to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://lib.minanft.io',
           label: 'API',
@@ -110,10 +110,12 @@ const config: Config = {
         {
           title: 'More',
           items: [
+            /*
             {
               label: 'Blog',
               to: '/blog',
             },
+            */
             {
               label: 'GitHub',
               href: 'https://github.com/dfstio',

@@ -4,7 +4,11 @@ sidebar_position: 1
 
 # MinaNFT
 
-The MinaNFT project is an innovative Non-Fungible Token (NFT) platform that integrates the unique privacy features of the Mina blockchain with advanced AI technology. It's designed to redefine the NFT space by offering a range of functionalities that go beyond traditional NFT capabilities. Here are the key aspects of the MinaNFT project:
+The MinaNFT project is an innovative Non-Fungible Token (NFT) platform that integrates the unique privacy features of the Mina blockchain with advanced AI technology. It's designed to redefine the NFT space by offering a range of functionalities that go beyond traditional NFT capabilities.
+
+![MinaNFT structure](/img/structure.png)
+
+Here are the key aspects of the MinaNFT project:
 
 1. **Customized Avatar NFTs**: Users can create personalized avatar NFTs which serve as digital identifiers across social media platforms and in various corporate and contractual interactions.
 
