@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Creating an NFT with TypeScript
+# TypeScript
 
 This tutorial will guide you through creating a Non-Fungible Token (NFT) using the MinaNFT library. Follow these simple steps to mint your NFT.
 

@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Creating an NFT on minanft.io
+# minanft.io
 
 This tutorial guides you through the steps to create your own NFT on minanft.io. The process involves uploading an image, entering details for your NFT, and obtaining an authorization code.
 

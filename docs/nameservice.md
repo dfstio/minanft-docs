@@ -18,6 +18,8 @@ The `MinaNFTNameServiceContract` is a smart contract for the Mina blockchain tha
 
 For detailed documentation on the contract, visit [MinaNFT Documentation](https://lib.minanft.io/classes/minanftnameservicecontract).
 
+![Docusaurus logo](/img/contract/graph.png)
+
 ### Contract Interaction
 
 Interact with the `MinaNFTNameServiceContract` using the following methods:

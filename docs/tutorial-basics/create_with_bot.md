@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Creating an NFT with @MinaNFT_bot
+# @MinaNFT_bot
 
 This tutorial guides you through creating an NFT using the @MinaNFT_bot on Telegram. There are three different methods: uploading a picture, describing the picture with words, and using a voice message.
 
