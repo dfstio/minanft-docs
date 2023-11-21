@@ -1,6 +1,12 @@
-# Website
+# MinaNFT documentation site
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+## Documentation site address
+
+https://docs.minanft.io
+
+## Framework
+
+This website is built using [Docusaurus 3](https://docusaurus.io/), a modern static website generator.
 
 ### Installation
 
