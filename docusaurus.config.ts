@@ -56,6 +56,23 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
+    algolia: {
+      // The application ID provided by Algolia
+      appId: 'FNFWWBB84O',
+
+      // Public API key: it is safe to commit it
+      apiKey: '1f8f5474095e765135d334904b12fe61',
+
+      indexName: 'minanft',
+
+      // Optional: see doc section below
+      contextualSearch: true,
+
+      // Optional: path for search page that enabled by default (`false` to disable it)
+      searchPagePath: 'search',
+
+      //... other Algolia params
+    },
     navbar: {
       title: 'MinaNFT',
       logo: {
@@ -76,8 +93,18 @@ const config: Config = {
           position: 'left',
         },
         {
+          href: 'https://t.me/minanft_bot?start',
+          label: '@MinaNFT_bot',
+          position: 'right',
+        },
+        {
           href: 'https://github.com/dfstio/minanft-lib',
           label: 'GitHub',
+          position: 'right',
+        },
+        {
+          href: 'https://www.npmjs.com/package/minanft',
+          label: 'NPM',
           position: 'right',
         },
       ],
@@ -89,8 +116,16 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Illustrated Tutorial',
               to: '/docs/intro',
+            },
+            {
+              label: 'Create NFT',
+              to: '/docs/category/create-nft',
+            },
+            {
+              label: 'API Reference',
+              href: 'https://lib.minanft.io',
             },
           ],
         },
@@ -108,7 +143,7 @@ const config: Config = {
           ],
         },
         {
-          title: 'More',
+          title: 'DFST',
           items: [
             /*
             {
@@ -121,7 +156,11 @@ const config: Config = {
               href: 'https://github.com/dfstio',
             },
             {
-              label: 'Created by',
+              label: 'Twitter',
+              href: 'https://twitter.com/dfst_io',
+            },
+            {
+              label: 'dfst.io',
               href: 'https://dfst.io',
             },
           ],
