@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 # Contracts Addresses
@@ -10,9 +10,6 @@ sidebar_position: 5
   [B62qpiD9ZWPi1JCx7hd4XcRujM1qc5jCADhhJVzTm3zZBWBpyRr3NFT](https://minascan.io/testworld/account/B62qpiD9ZWPi1JCx7hd4XcRujM1qc5jCADhhJVzTm3zZBWBpyRr3NFT/zkApp?type=zk-acc)
 
   [MinaNFT Token holders](https://minascan.io/testworld/token/x4WfQmZtemwfjSQqxgmwBkTQuepSAAMZUB19cnfxS8azroB3jw/holders)
-
-- **Verifier Contract**  
-  [B62qnsUFJnVGwaCx7Vuxu89yeLNtEAumTrMfYphoyhV9UkHPXdWzVYq](https://minascan.io/testworld/account/B62qnsUFJnVGwaCx7Vuxu89yeLNtEAumTrMfYphoyhV9UkHPXdWzVYq/zkApp?type=zk-acc)
 
 - **Escrow Contract**  
   [B62qoc7Juw7Q41y2QGwhadKck3qWB9brzCEegCBY8SPZWzUNtZXyQGd](https://minascan.io/testworld/account/B62qoc7Juw7Q41y2QGwhadKck3qWB9brzCEegCBY8SPZWzUNtZXyQGd/zkApp?type=zk-acc)

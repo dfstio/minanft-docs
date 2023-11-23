@@ -93,6 +93,11 @@ const config: Config = {
           position: 'left',
         },
         {
+          href: 'https://docs.minanft.io/coverage',
+          label: 'Coverage',
+          position: 'left',
+        },
+        {
           href: 'https://t.me/minanft_bot?start',
           label: '@MinaNFT_bot',
           position: 'right',
