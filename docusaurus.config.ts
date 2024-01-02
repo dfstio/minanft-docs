@@ -29,6 +29,7 @@ const config: Config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+  /*
   plugins: [
     [
       'docusaurus-plugin-typedoc-api',
@@ -38,6 +39,7 @@ const config: Config = {
       },
     ],
   ],
+  */
   presets: [
     [
       'classic',
