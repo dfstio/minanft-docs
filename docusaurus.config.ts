@@ -35,6 +35,10 @@ const config: Config = {
       {
         projectRoot: path.join(__dirname, '../minanft-lib'),
         packages: ['.'],
+        banner: "Start building your own Mina NFTs today with the minanft library!",
+        typedocOptions: {
+          excludeExternals: true,
+      },
       },
     ],
   ],
