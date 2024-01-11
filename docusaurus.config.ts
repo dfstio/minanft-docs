@@ -139,7 +139,7 @@ const config: Config = {
             },
             {
               label: 'API Reference',
-              href: 'https://lib.minanft.io',
+              to: 'api',
             },
           ],
         },
