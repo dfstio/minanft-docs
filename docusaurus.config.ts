@@ -29,7 +29,6 @@ const config: Config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-  /*
   plugins: [
     [
       'docusaurus-plugin-typedoc-api',
@@ -39,7 +38,6 @@ const config: Config = {
       },
     ],
   ],
-  */
   presets: [
     [
       'classic',
@@ -63,17 +61,19 @@ const config: Config = {
       appId: 'FNFWWBB84O',
 
       // Public API key: it is safe to commit it
-      apiKey: '1f8f5474095e765135d334904b12fe61',
+      apiKey: 'cdf9253dbedbc7121d9204aed33c1e39', //'1f8f5474095e765135d334904b12fe61',
 
       indexName: 'minanft',
+      externalUrlRegex: 'https://docs.minanft.io/coverage/',
 
       // Optional: see doc section below
-      contextualSearch: true,
+      contextualSearch: false,
 
       // Optional: path for search page that enabled by default (`false` to disable it)
       searchPagePath: 'search',
 
       //... other Algolia params
+      
     },
     navbar: {
       title: 'MinaNFT',
@@ -89,9 +89,16 @@ const config: Config = {
           label: 'Docs',
         },
         //{to: '/blog', label: 'Blog', position: 'left'},
+        /*
         {
           href: 'https://lib.minanft.io',
           label: 'API',
+          position: 'left',
+        },
+        */
+        {
+          to: 'api',
+          label: 'API Reference',
           position: 'left',
         },
         {
