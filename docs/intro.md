@@ -11,7 +11,7 @@ The MinaNFT project is an innovative Non-Fungible Token (NFT) platform that inte
 
 Here are the key aspects of the MinaNFT project:
 
-1. **Customized Avatar NFTs**: Users can create personalized avatar NFTs which serve as digital identifiers across social media platforms and in various corporate and contractual interactions.
+1. **Customized Avatar NFTs**: Users can create personalized avatar NFTs that serve as digital identifiers across social media platforms and in various corporate and contractual interactions.
 
 2. **AI-Driven NFT Generation**: MinaNFT employs a user-friendly Telegram bot that enables users to generate unique NFTs by simply describing their avatar idea via text or voice message in any language. The AI technology then takes care of the creation process.
 
