@@ -53,6 +53,9 @@ const config: Config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        googleTagManager: {
+          containerId: 'GTM-WZ4G3MFW',
+        },
       } satisfies Preset.Options,
     ],
   ],
@@ -152,7 +155,7 @@ const config: Config = {
           items: [
             {
               label: 'Discord',
-              href: 'https://discord.gg/CVc9yz8K',
+              href: 'https://discord.gg/j8XpQ3pr',
             },
             {
               label: 'Twitter',
