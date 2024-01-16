@@ -8,7 +8,7 @@ sidebar_position: 8
 - Telegram bot:
   - Written system messages: English, Turkish, Italian, Spanish, French
   - Voice chat messages: English, Spanish, French, Italian, Turkish, Arabic, Dutch, Catalan, Chinese, Danish, German, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Russian, Swedish, Welsh.
-  - Voice comprehension: about [50 languages](https://github.com/openai/whisper)
+  - Voice comprehension: about [50 languages](https://github.com/openai/whisper#available-models-and-languages)
   - Text chat messages: almost any language
   - Text comprehension: almost any language
 - CLI tool: English
