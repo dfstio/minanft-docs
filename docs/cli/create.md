@@ -2,7 +2,9 @@
 sidebar_position: 3
 ---
 
-# Create NFT Commands
+# Create NFT
+
+## Commands
 
 ```
   key [options] <key> <value>  Add key-value pair to NFT
@@ -13,7 +15,93 @@ sidebar_position: 3
   help [command]               display help for command
   mint                         Mint NFT
   exit                         Exit without minting
+```
 
+### add
+
+```
+Usage: key [options] <key> <value>
+
+Add key-value pair to NFT
+
+Arguments:
+  key         Key, maximum 30 characters
+  value       Value, maximum 30 characters
+
+Options:
+  --private   Make this key private
+  -h, --help  display help for command
+
+```
+
+### image
+
+```
+Usage: image [options] <file>
+
+Add image to NFT
+
+Arguments:
+  file                File name of the image
+
+Options:
+  --noroot            Skip calculating Merkle Tree root of the image
+  --ipfs <string>     IPFS hash of the file
+  --arweave <string>  Arweave hash of the file
+  -h, --help          display help for command
+
+```
+
+### file
+
+```
+Usage: file [options] <key> <file>
+
+Add file to NFT
+
+Arguments:
+  key                 Key, maximum 30 characters
+  file                File name
+
+Options:
+  --private           Make this file private
+  --ipfs <string>     IPFS hash of the file
+  --arweave <string>  Arweave hash of the file
+  --noroot            Skip calculating Merkle Tree root of the file
+  --text              Text file
+  --word              Text file
+  --png               PNG file
+  -h, --help          display help for command
+```
+
+### text
+
+```
+Usage: text [options] <key> <text>
+
+Add text to NFT
+
+Arguments:
+  key         Key, maximum 30 characters
+  text        Text to add
+
+Options:
+  --private   Make this text private
+  -h, --help  display help for command
+```
+
+### description
+
+```
+Usage: description [options] <text>
+
+Add description to NFT
+
+Arguments:
+  text        Description text
+
+Options:
+  -h, --help  display help for command
 ```
 
 ## Example
