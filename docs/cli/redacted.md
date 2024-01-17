@@ -127,6 +127,7 @@ RSS memory proof 64 calculated: 2485 MB, changed by 13 MB
 calculated proofs: 12:08.093 (m:ss.mmm)
 RSS memory calculated proofs: 2485 MB, changed by 0 MB
 RSS memory proof 1 merged: 3315 MB, changed by 830 MB
+...
 RSS memory proof 63 merged: 5463 MB, changed by 199 MB
 RSS memory proof 64 merged: 5643 MB, changed by 180 MB
 merged proofs: 21:07.907 (m:ss.mmm)
