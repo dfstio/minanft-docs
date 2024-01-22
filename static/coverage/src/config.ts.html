@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for src/privatemetadata.ts</title>
+    <title>Code coverage report for src/config.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">src</a> privatemetadata.ts</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">src</a> config.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>12/12</span>
-            </div>
-        
-            
-            <div class='fl pad1y space-right2'>
-                <span class="strong">83.33% </span>
-                <span class="quiet">Branches</span>
-                <span class='fraction'>5/6</span>
-            </div>
-        
-            
-            <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
-                <span class="quiet">Functions</span>
                 <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/0</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/0</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>11/11</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
@@ -100,10 +100,8 @@
 <a name='L35'></a><a href='#L35'>35</a>
 <a name='L36'></a><a href='#L36'>36</a>
 <a name='L37'></a><a href='#L37'>37</a>
-<a name='L38'></a><a href='#L38'>38</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">24x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">24x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">26x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -117,19 +115,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">234x</span>
-<span class="cline-any cline-yes">234x</span>
-<span class="cline-any cline-yes">234x</span>
-<span class="cline-any cline-yes">234x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">221x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">221x</span>
-<span class="cline-any cline-yes">92x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">221x</span>
-<span class="cline-any cline-yes">221x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -137,43 +122,61 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">export { PrivateMetadata };
-import { Field } from "o1js";
-import { MinaNFT } from "./minanft";
-import { BaseMinaNFTObject } from "./baseminanftobject";
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">26x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const config = {
+  MINAURL: "https://proxy.berkeley.minaexplorer.com/graphql",
+  MINAURL2: "https://api.minascan.io/node/berkeley/v1/graphql",
+  TESTWORLD2: "https://proxy.testworld.minaexplorer.com/graphql",
+  TESTWORLD2_ARCHIVE: "https://archive.testworld.minaexplorer.com",
+  ARCHIVEURL: "https://archive.berkeley.minaexplorer.com",
+  ARCHIVEURL2: "https://api.minascan.io/archive/berkeley/v1/graphql",
+  MINAFEE: "150000000",
+  MINAEXPLORER: "https://berkeley.minaexplorer.com",
+  MINNFTAPIAUTH:
+    "AkRjS8yioA7i1CwvB3nOvcyLYh6sNMi4em7C0ybmYy67lhDC2KxEQtm1z45llEAR",
+  MINNFTAPI: "https://n1zjzclr99.execute-api.eu-west-1.amazonaws.com/dev/api",
+  CONTRACT_DEPLOYER: "B62qqt5DBB8t7edm9dQf1eWnd7idd2jCzjHzDKbrs24W2Qnpvs7n2A3",
+  NAMES_ORACLE: "B62qids6rU9iqjvBV4DHxW8z67mgHFws1rPmFoqpcyRq2arYxUw6sZu",
+  MINANFT_NAME_SERVICE:
+    "B62qpiD9ZWPi1JCx7hd4XcRujM1qc5jCADhhJVzTm3zZBWBpyRr3NFT",
+  MINANFT_NFT_ADDRESS:
+    "B62qjfEWNWx4WzD5WvMomzv37FiPhuph4pTMtKDvkSQbNt8HN1BDGtQ",
+  BADGE_TWITTER: "B62qmYSotSkUHY8XwsinGpW3gqTpsyoZcQoLK5d3qTAJ9oy1dRVD11b",
+  BADGE_DISCORD: "B62qnVYz1TiirtTuqj5oM3Nke8jvdMV8MKEKQvGDc4hUy86n2txx9MG",
+  BADGE_TELEGRAM: "B62qk2JqK8ttXdyhGToSU82Bt3xEZZs5AszxF6Xoa8Gy4Bq41PVWZXH",
+  BADGE_GITHUB: "B62qjVBj9nn5io9zeooweWzPqKGLzaXZptxWuFJcKLLkJUaDGXxn7E1",
+  BADGE_LINKEDIN: "B62qqsvkxnzr6nyDGQQzKUktm6km3PTND9Lz9yaLcJLSBd9Fm3KZMUJ",
+  VERIFIER: "B62qnsUFJnVGwaCx7Vuxu89yeLNtEAumTrMfYphoyhV9UkHPXdWzVYq",
+  ESCROW: "B62qoc7Juw7Q41y2QGwhadKck3qWB9brzCEegCBY8SPZWzUNtZXyQGd",
+  BADGE_TWITTER_ORACLE:
+    "B62qkvDzFG2VLkDDnkJvpG3Zp2QfRooiZDhnDcJEr4HTrnS8z5xc7qn",
+  BADGE_DISCORD_ORACLE:
+    "B62qnBQWrZPYBUq856nSMN5bPbUnEKVeXhbeb9o9dWKkHhCmDfFz8pG",
+  BADGE_TELEGRAM_ORACLE:
+    "B62qqSFncUiht898ukZr7vxVPCMfztk2jnMRxJzddJr6sdRJZApcotT",
+  BADGE_GITHUB_ORACLE:
+    "B62qmFn6DnRzNmhiHRYSCL5Aaabe7nQVSC78NdzfRuw1p77mjBNVwrb",
+  BADGE_LINKEDIN_ORACLE:
+    "B62qkHnwZGjiLnJwUrVJVrBp3bxqYe8cW4nrLuAB5p9QJwS16Q4Msn1",
+};
 &nbsp;
-class PrivateMetadata {
-  data: Field;
-  kind: Field;
-  isPrivate: boolean;
-  linkedObject?: BaseMinaNFTObject;
-&nbsp;
-  constructor(value: {
-    data: Field;
-    kind: Field;
-    isPrivate?: boolean;
-    linkedObject?: BaseMinaNFTObject;
-  }) {
-    this.data = value.data;
-    this.kind = value.kind;
-    this.isPrivate = value.isPrivate ?? <span class="branch-1 cbranch-no" title="branch not covered" >false;</span>
-    this.linkedObject = value.linkedObject;
-  }
-  public toJSON(): object {
-    const kind = MinaNFT.stringFromField(this.kind);
-    let data: string;
-    if (kind === "string") data = MinaNFT.stringFromField(this.data);
-    else data = this.data.toJSON();
-    const isPrivate: boolean | undefined =
-      this.isPrivate === true ? true : undefined;
-    return {
-      data,
-      kind,
-      isPrivate,
-      linkedObject: this.linkedObject?.toJSON(),
-    };
-  }
-}
+export default config;
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
