@@ -1,60 +1,62 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
-import type * as Preset from '@docusaurus/preset-classic';
-import path from 'node:path';
+import { themes as prismThemes } from "prism-react-renderer";
+import type { Config } from "@docusaurus/types";
+import type * as Preset from "@docusaurus/preset-classic";
+import path from "node:path";
 
 const config: Config = {
-  title: 'MinaNFT',
-  tagline: 'Empower Your Identity, Secure Your Story – with MinaNFT',
-  favicon: 'img/favicon.ico',
+  title: "MinaNFT",
+  tagline: "Empower Your Identity, Secure Your Story – with MinaNFT",
+  favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: 'https://docs.minanft.io',
+  url: "https://docs.minanft.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: "DFST", // Usually your GitHub org/user name.
+  projectName: "MinaNFT", // Usually your repo name.
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
   plugins: [
     [
-      'docusaurus-plugin-typedoc-api',
+      "docusaurus-plugin-typedoc-api",
       {
-        projectRoot: path.join(__dirname, '../minanft-lib'),
-        packages: ['.'],
-        banner: "Start building your own Mina NFTs today with the minanft library!",
+        projectRoot: path.join(__dirname, "../minanft-lib"),
+        packages: ["."],
+        banner:
+          "Start building your own Mina NFTs today with the minanft library!",
         typedocOptions: {
           excludeExternals: true,
-      },
+        },
       },
     ],
   ],
   presets: [
     [
-      'classic',
+      "@docusaurus/preset-classic",
       {
         docs: {
-          sidebarPath: './sidebars.ts',       },
-        blog: {
-          showReadingTime: true,       },
+          sidebarPath: "./sidebars.ts",
+          routeBasePath: "/",
+        },
+        blog: false,
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: "./src/css/custom.css",
         },
         googleTagManager: {
-          containerId: 'G-7VMTL8FVEL',//'GTM-WZ4G3MFW',
+          containerId: "G-7VMTL8FVEL", //'GTM-WZ4G3MFW',
         },
       } satisfies Preset.Options,
     ],
@@ -62,38 +64,37 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: "img/docusaurus-social-card.jpg",
     algolia: {
       // The application ID provided by Algolia
-      appId: 'FNFWWBB84O',
+      appId: "FNFWWBB84O",
 
       // Public API key: it is safe to commit it
-      apiKey: 'cdf9253dbedbc7121d9204aed33c1e39', //'1f8f5474095e765135d334904b12fe61',
+      apiKey: "cdf9253dbedbc7121d9204aed33c1e39", //'1f8f5474095e765135d334904b12fe61',
 
-      indexName: 'minanft',
-      externalUrlRegex: 'https://docs.minanft.io/coverage/',
+      indexName: "minanft",
+      externalUrlRegex: "https://docs.minanft.io/coverage/",
 
       // Optional: see doc section below
       contextualSearch: false,
 
       // Optional: path for search page that enabled by default (`false` to disable it)
-      searchPagePath: 'search',
+      searchPagePath: "search",
 
       //... other Algolia params
-      
     },
     navbar: {
-      title: 'MinaNFT',
+      title: "MinaNFT",
       logo: {
-        alt: 'MinaNFT Logo',
-        src: 'img/minanft.jpg',
+        alt: "MinaNFT Logo",
+        src: "img/minanft.jpg",
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Docs',
+          type: "docSidebar",
+          sidebarId: "tutorialSidebar",
+          position: "left",
+          label: "Docs",
         },
         //{to: '/blog', label: 'Blog', position: 'left'},
         /*
@@ -104,67 +105,63 @@ const config: Config = {
         },
         */
         {
-          to: 'api',
-          label: 'API Reference',
-          position: 'left',
+          to: "api",
+          label: "API Reference",
+          position: "left",
         },
         {
-          href: 'https://docs.minanft.io/coverage',
-          label: 'Coverage',
-          position: 'left',
+          href: "https://docs.minanft.io/coverage",
+          label: "Coverage",
+          position: "left",
         },
         {
-          href: 'https://t.me/minanft_bot?start',
-          label: '@MinaNFT_bot',
-          position: 'right',
+          href: "https://t.me/minanft_bot?start",
+          label: "@MinaNFT_bot",
+          position: "right",
         },
         {
-          href: 'https://github.com/dfstio/minanft-lib',
-          label: 'GitHub',
-          position: 'right',
+          href: "https://github.com/dfstio/minanft-lib",
+          label: "GitHub",
+          position: "right",
         },
         {
-          href: 'https://www.npmjs.com/package/minanft',
-          label: 'NPM',
-          position: 'right',
+          href: "https://www.npmjs.com/package/minanft",
+          label: "NPM",
+          position: "right",
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [
         {
-          title: 'Docs',
+          title: "Docs",
           items: [
             {
-              label: 'Illustrated Tutorial',
-              to: '/docs/intro',
+              label: "Illustrated Tutorial",
+              to: "/",
             },
             {
-              label: 'Create NFT',
-              to: '/docs/category/create-nft',
-            },
-            {
-              label: 'API Reference',
-              to: 'api',
+              label: "API Reference",
+              to: "api",
             },
           ],
         },
         {
-          title: 'Community',
+          title: "Community",
           items: [
             {
-              label: 'Discord',
-              href: 'https://discord.gg/j8XpQ3pr',
+              label: "Discord",
+              href: "https://discord.gg/j8XpQ3pr",
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/minanft_io',
+              label: "Twitter",
+              href: "https://twitter.com/minanft_io",
             },
           ],
         },
         {
-          title: 'DFST',
+          title: "DFST",
           items: [
             /*
             {
@@ -173,16 +170,16 @@ const config: Config = {
             },
             */
             {
-              label: 'GitHub',
-              href: 'https://github.com/dfstio',
+              label: "GitHub",
+              href: "https://github.com/dfstio",
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/dfst_io',
+              label: "Twitter",
+              href: "https://twitter.com/dfst_io",
             },
             {
-              label: 'dfst.io',
-              href: 'https://dfst.io',
+              label: "dfst.io",
+              href: "https://dfst.io",
             },
           ],
         },

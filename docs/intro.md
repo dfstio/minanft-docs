@@ -1,10 +1,10 @@
 ---
 sidebar_position: 1
+slug: /
 ---
 
 # MinaNFT
 
-![MinaNFT structure](/img/shiva.png)
 The MinaNFT project is an innovative Non-Fungible Token (NFT) platform that integrates the unique privacy features of the Mina blockchain with advanced AI technology. It's designed to redefine the NFT space by offering a range of functionalities that go beyond traditional NFT capabilities.
 
 ![MinaNFT structure](/img/structure.png)

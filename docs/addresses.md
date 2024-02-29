@@ -4,10 +4,10 @@ sidebar_position: 10
 
 # Contracts Addresses
 
-## Contract Addresses on Berkeley and TestWorld2 Networks
+## Contract Addresses on Berkeley Network
 
 - **MinaNFT Name Service Contract**  
-  [B62qpiD9ZWPi1JCx7hd4XcRujM1qc5jCADhhJVzTm3zZBWBpyRr3NFT](https://minascan.io/berkeley/account/B62qpiD9ZWPi1JCx7hd4XcRujM1qc5jCADhhJVzTm3zZBWBpyRr3NFT/zkApp?type=zk-acc)
+  [B62qrryunX2LzaZ1sGtqfJqzSdNdN7pVSZw8YtnxQNxrrF9Vt56bNFT](https://minascan.io/berkeley/account/B62qrryunX2LzaZ1sGtqfJqzSdNdN7pVSZw8YtnxQNxrrF9Vt56bNFT/zkApp?type=zk-acc)
 
   [MinaNFT Token holders](https://minascan.io/berkeley/token/x4WfQmZtemwfjSQqxgmwBkTQuepSAAMZUB19cnfxS8azroB3jw/holders)
 
