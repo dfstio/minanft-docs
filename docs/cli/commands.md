@@ -5,6 +5,8 @@ sidebar_position: 2
 # Commands
 
 ```
+Mina NFT CLI tool (c) DFST 2024 www.minanft.io
+
 Usage: minanft [options] [command]
 
 Mina NFT CLI tool
@@ -17,18 +19,23 @@ Options:
   -h, --help                                            display help for command
 
 Commands:
-  createaccount [options] <name>                        Create new MINA protocol account or import
-                                                        existing one
+  rollup.blocks [options]                               Show information about the last 10 Rollup blocks
+  rollup.list                                           List all Rollup NFT names
+  rollup.name <name>                                    Get the information about the Rollup NFT name
+  rollup.prove.keys [options] <name>                    Prove Rollup NFT private values off-chain
+  rollup.prove.key [options] <name>                     Prove Rollup NFT private value on-chain
+  verifier.deploy <privateKey>                          Deploy Rollup NFT verifier contract
+  verifier.upgrade <privateKey>                         Upgrade Rollup NFT verifier contract
+  balance <name>                                        Check the balance of the existing MINA protocol account
+  createaccount [options] <name>                        Create new MINA protocol account or import existing one
   exportaccount <name>                                  Export existing MINA protocol account
-  balance <name>                                        Check the balance of the existing MINA protocol
-                                                        account
   reserve <name> [account]                              Reserve NFT name
   create [options] <name> [owner]                       Create NFT
   index <name>                                          Index NFT name for minanft.io frontend
   prove [options] <name>                                Prove NFT metadata
   provefile [options] <name> <key>                      Prove NFT file
   provetext [options] <name> <key>                      Prove NFT text
-  provepng [options] <name> <key> <original> <redacted> Prove NFT png image
+  provepng [options] <name> <key> <original> <redacte>  Prove NFT png image
   verify <name>                                         Verify NFT metadata
   verifyfile [options] <name> <key> <file>              Verify NFT file
   verifytext <name> <key>                               Verify NFT redacted text file
