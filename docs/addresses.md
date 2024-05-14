@@ -4,12 +4,18 @@ sidebar_position: 10
 
 # Contracts Addresses
 
-## Contract Addresses on Berkeley Network
+## Contract Addresses on Devnet, Berkeley and Zeko Network
 
 - **MinaNFT Name Service Contract**  
   [B62qrryunX2LzaZ1sGtqfJqzSdNdN7pVSZw8YtnxQNxrrF9Vt56bNFT](https://minascan.io/berkeley/account/B62qrryunX2LzaZ1sGtqfJqzSdNdN7pVSZw8YtnxQNxrrF9Vt56bNFT/zkApp?type=zk-acc)
 
   [MinaNFT Token holders](https://minascan.io/berkeley/token/x4WfQmZtemwfjSQqxgmwBkTQuepSAAMZUB19cnfxS8azroB3jw/holders)
+
+- **Rollup NFT on Zeko**
+  [B62qo2gLfhzbKpSQw3G7yQaajEJEmxovqm5MBRb774PdJUw6a7XnNFT](https://zekoscan.io/devnet/account/B62qo2gLfhzbKpSQw3G7yQaajEJEmxovqm5MBRb774PdJUw6a7XnNFT/txs?type=zk-acc)
+
+- **Verifier contract on Zeko**
+  [B62qqvxptqb2cgzuUJoH2ifKdBJAJFGE1iUPZMbftutuLU2pBacwNFT](https://zekoscan.io/devnet/account/B62qqvxptqb2cgzuUJoH2ifKdBJAJFGE1iUPZMbftutuLU2pBacwNFT/txs?type=zk-acc)
 
 - **Escrow Contract**  
   [B62qoc7Juw7Q41y2QGwhadKck3qWB9brzCEegCBY8SPZWzUNtZXyQGd](https://minascan.io/berkeley/account/B62qoc7Juw7Q41y2QGwhadKck3qWB9brzCEegCBY8SPZWzUNtZXyQGd/zkApp?type=zk-acc)

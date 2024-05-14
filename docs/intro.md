@@ -7,6 +7,22 @@ slug: /
 
 The MinaNFT project is an innovative Non-Fungible Token (NFT) platform that integrates the unique privacy features of the Mina blockchain with advanced AI technology. It's designed to redefine the NFT space by offering a range of functionalities that go beyond traditional NFT capabilities.
 
+## NEW
+
+**Rollup NFTs:**
+
+- Easy integration with any Rollup or zkApp.
+- The metadata is stored as a forest of Merkle Trees
+- CLI tool to prove and verify
+
+**Zeko NFTs:**
+
+Based on Rollup NFT and optimistic rollup technology, fully proved block state on-chain in token accounts.
+
+![Architecture](/img/rollup.svg)
+
+## MinaNFT project structure
+
 ![MinaNFT structure](/img/structure.png)
 
 Here are the key aspects of the MinaNFT project:
