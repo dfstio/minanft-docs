@@ -5,7 +5,7 @@ import path from "node:path";
 
 const config: Config = {
   title: "MinaNFT",
-  tagline: "Empower Your Identity, Secure Your Story – with MinaNFT",
+  tagline: "Proof of NFT",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
@@ -87,7 +87,7 @@ const config: Config = {
       title: "MinaNFT",
       logo: {
         alt: "MinaNFT Logo",
-        src: "img/minanft.jpg",
+        src: "img/minanft.png",
       },
       items: [
         {
@@ -162,6 +162,7 @@ const config: Config = {
         },
         {
           title: "DFST",
+
           items: [
             /*
             {
