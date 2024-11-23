@@ -30,13 +30,26 @@ const config: Config = {
     locales: ["en"],
   },
   plugins: [
+    // [
+    //   "docusaurus-plugin-typedoc-api",
+    //   {
+    //     id: "minanft-lib",
+    //     projectRoot: path.join(__dirname, "../minanft-lib"),
+    //     packages: ["."],
+    //     outputDir: "docs/api",
+    //     banner:
+    //       "Start building your own Mina NFTs today with the minanft library!",
+    //     typedocOptions: {
+    //       excludeExternals: true,
+    //     },
+    //   },
+    // ],
     [
       "docusaurus-plugin-typedoc-api",
       {
-        projectRoot: path.join(__dirname, "../minanft-lib"),
+        projectRoot: path.join(__dirname, "../nft-standard-draft"),
         packages: ["."],
-        banner:
-          "Start building your own Mina NFTs today with the minanft library!",
+        banner: "NFT standard",
         typedocOptions: {
           excludeExternals: true,
         },
@@ -64,7 +77,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: "img/docusaurus-social-card.jpg",
+    image: "img/minanft-logo.png",
     algolia: {
       // The application ID provided by Algolia
       appId: "FNFWWBB84O",
@@ -104,9 +117,14 @@ const config: Config = {
           position: 'left',
         },
         */
+        // {
+        //   to: "api",
+        //   label: "MinaNFT V2 API",
+        //   position: "left",
+        // },
         {
           to: "api",
-          label: "API Reference",
+          label: "NFT Standard API",
           position: "left",
         },
         {
@@ -115,20 +133,25 @@ const config: Config = {
           position: "left",
         },
         {
-          href: "https://t.me/minanft_bot?start",
-          label: "@MinaNFT_bot",
-          position: "right",
+          href: "https://docs.minatokens.com",
+          label: "MinaTokens API",
+          position: "left",
         },
-        {
-          href: "https://github.com/dfstio/minanft-lib",
-          label: "GitHub",
-          position: "right",
-        },
-        {
-          href: "https://www.npmjs.com/package/minanft",
-          label: "NPM",
-          position: "right",
-        },
+        // {
+        //   href: "https://t.me/minanft_bot?start",
+        //   label: "@MinaNFT_bot",
+        //   position: "right",
+        // },
+        // {
+        //   href: "https://github.com/dfstio/minanft-lib",
+        //   label: "GitHub",
+        //   position: "right",
+        // },
+        // {
+        //   href: "https://www.npmjs.com/package/minanft",
+        //   label: "NPM",
+        //   position: "right",
+        // },
       ],
     },
     footer: {
