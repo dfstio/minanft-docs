@@ -1354,7 +1354,7 @@ Below is a summary of the constraints used by each key contract in the MinaNFT s
 ### Test Coverage
 
 ```sh
-yarn coverage
+npm run nft:coverage
 ```
 
 The test statements coverage is summarized below:
