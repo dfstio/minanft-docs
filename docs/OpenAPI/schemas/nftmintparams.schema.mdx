@@ -1,0 +1,33 @@
+---
+id: nftmintparams
+title: "NftMintParams"
+description: ""
+sidebar_label: "NftMintParams"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"name":"string","address":"string","addressPrivateKey":"string","tokenId":0,"data":{"owner":"string","approved":"string","version":0,"id":"string","canChangeOwnerByProof":true,"canTransfer":true,"canApprove":true,"canChangeMetadata":true,"canChangeStorage":true,"canChangeName":true,"canChangeMetadataVerificationKeyHash":true,"canPause":true,"isPaused":true,"requireOwnerAuthorizationToUpgrade":true},"fee":0,"metadata":"string","storage":"string","metadataVerificationKeyHash":"string","expiry":0}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"NftMintParams"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","required":["name","data","metadata"],"properties":{"name":{"type":"string","description":"The name of the NFT"},"address":{"type":"string","description":"The address of the NFT contract"},"addressPrivateKey":{"type":"string","description":"The private key of the NFT contract"},"tokenId":{"type":"integer","format":"int64","description":"The token ID of the NFT"},"data":{"description":"The data associated with the NFT, including owner, approved, version, id, permissions and flags","type":"object","required":["owner"],"properties":{"owner":{"type":"string","description":"The public key of the owner of the NFT"},"approved":{"type":"string","description":"The public key of the approved address of the NFT"},"version":{"type":"integer","format":"int32","description":"The version number of the NFT state"},"id":{"type":"string","description":"The unique identifier of the NFT within the collection. A bigint encoded as a string."},"canChangeOwnerByProof":{"type":"boolean","description":"Determines whether the NFT's ownership can be changed via a zero-knowledge proof (readonly)"},"canTransfer":{"type":"boolean","description":"Specifies if the NFT's ownership can be transferred (readonly)"},"canApprove":{"type":"boolean","description":"Specifies if the NFT's approved address can be changed (readonly)"},"canChangeMetadata":{"type":"boolean","description":"Indicates whether the NFT's metadata can be updated (readonly)"},"canChangeStorage":{"type":"boolean","description":"Determines whether the storage associated with the NFT can be altered (readonly)"},"canChangeName":{"type":"boolean","description":"Specifies if the name of the NFT can be changed (readonly)"},"canChangeMetadataVerificationKeyHash":{"type":"boolean","description":"Indicates whether the verification key hash for the metadata can be changed (readonly)"},"canPause":{"type":"boolean","description":"Specifies if the NFT contract can be paused, preventing certain operations (readonly)"},"isPaused":{"type":"boolean","description":"Indicates whether the NFT contract is currently paused"},"requireOwnerAuthorizationToUpgrade":{"type":"boolean","description":"Determines whether the owner's authorization is required to upgrade the NFT's verification key (readonly)"}},"title":"NftData"},"fee":{"type":"integer","format":"int64","description":"The fee associated with minting the NFT"},"metadata":{"oneOf":[{"type":"string"},{"type":"object","required":["name","image"],"properties":{"name":{"type":"string","description":"The name of the NFT"},"image":{"type":"string","description":"The image URL or IPFS hash associated with the NFT"},"description":{"type":"string","description":"Optional description of the NFT"},"banner":{"type":"string","description":"Optional banner image URL or IPFS hash. Required for Collection Master NFT."},"traits":{"type":"array","items":{"type":"object","required":["key","type","value"],"properties":{"key":{"type":"string","description":"The trait key/name"},"type":{"type":"string","enum":["string","text","image","url","field","number","address","map","tree"],"description":"The type of the trait value"},"value":{"oneOf":[{"type":"string"},{"type":"object"}],"description":"The trait value, can be a string or complex object depending on type"},"isPrivate":{"type":"boolean","description":"Optional flag indicating if this trait is private"}}}}},"title":"NftMetadata"}],"description":"The metadata associated with the NFT, Field as a string or NftMetadata object"},"storage":{"type":"string","description":"The off-chain storage information (e.g., IPFS hash)"},"metadataVerificationKeyHash":{"type":"string","description":"The hash of the verification key used for metadata proofs, Field as a string"},"expiry":{"type":"integer","format":"int32","description":"The expiry time slot for minting the NFT"}},"title":"NftMintParams"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

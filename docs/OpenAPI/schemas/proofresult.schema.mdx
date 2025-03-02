@@ -1,0 +1,33 @@
+---
+id: proofresult
+title: "ProofResult"
+description: ""
+sidebar_label: "ProofResult"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"success":true,"hash":"string","error":"string"}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"ProofResult"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","properties":{"success":{"type":"boolean","description":"Indicates whether the proof generation was successful."},"hash":{"type":"string","description":"The transaction hash if the proof was successfully applied."},"error":{"type":"string","description":"Error message if proof generation failed."}},"title":"ProofResult"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

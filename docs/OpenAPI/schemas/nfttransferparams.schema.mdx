@@ -1,0 +1,33 @@
+---
+id: nfttransferparams
+title: "NftTransferParams"
+description: ""
+sidebar_label: "NftTransferParams"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"from":"string","to":"string","price":0,"requireApproval":true,"context":{"custom":["string"]}}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"NftTransferParams"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","required":["from","to"],"properties":{"from":{"type":"string","description":"The address of the owner or approved"},"to":{"type":"string","description":"The address of the recipient"},"price":{"type":"number","description":"The price of the NFT being transferred"},"requireApproval":{"type":"boolean","description":"If true, the transfer requires approval from the admin contract"},"context":{"type":"object","description":"The custom context for the transfer","properties":{"custom":{"type":"array","size":3,"items":{"type":"string"},"description":"The custom context for the transfer, 3 Fields"}}}},"title":"NftTransferParams"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

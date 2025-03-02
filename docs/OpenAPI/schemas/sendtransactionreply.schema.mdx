@@ -1,0 +1,33 @@
+---
+id: sendtransactionreply
+title: "SendTransactionReply"
+description: ""
+sidebar_label: "SendTransactionReply"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"hash":"string","status":"string","success":true,"error":{}}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"SendTransactionReply"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","required":["success"],"properties":{"hash":{"type":"string","description":"The transaction hash if successful."},"status":{"type":"string","description":"The status of the transaction."},"success":{"type":"boolean","description":"Whether the transaction was sent to the network."},"error":{"type":"object","description":"Error details if the transaction failed."}},"title":"SendTransactionReply"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 5
 ---
 
 # Why Mina for NFTs?
@@ -44,6 +44,3 @@ MinaNFT on the Mina Protocol provides an innovative, privacy-centric platform fo
 ## Resources
 
 - [Mina Protocol Official Website](https://minaprotocol.com)
-- [MinaNFT GitHub Repository](https://github.com/dfstio/minanft-lib)
-- [MinaNFT npm Package](https://www.npmjs.com/package/minanft)
-- [MinaNFT Community](https://docs.minanft.io/)

@@ -1,0 +1,33 @@
+---
+id: balancerequestparams
+title: "BalanceRequestParams"
+description: ""
+sidebar_label: "BalanceRequestParams"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"tokenAddress":"string","tokenId":"string","address":"string"}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"BalanceRequestParams"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","required":["address"],"properties":{"tokenAddress":{"type":"string","description":"The address of the token contract (optional)."},"tokenId":{"type":"string","description":"The token ID (optional)."},"address":{"type":"string","description":"The Mina address for which to retrieve the balance."}},"title":"BalanceRequestParams"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

@@ -1,0 +1,33 @@
+---
+id: collectiondata
+title: "CollectionData"
+description: ""
+sidebar_label: "CollectionData"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"royaltyFee":0,"transferFee":0,"requireTransferApproval":true,"mintingIsLimited":true,"isPaused":true}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"CollectionData"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","properties":{"royaltyFee":{"type":"integer","format":"int32","description":"The royalty fee percentage (e.g., 1000 = 1%, 100 = 0.1%, 10000 = 10%, 100000 = 100%)"},"transferFee":{"type":"integer","format":"int64","description":"The transfer fee amount"},"requireTransferApproval":{"type":"boolean","description":"If true, transferring NFTs requires approval from the admin contract"},"mintingIsLimited":{"type":"boolean","description":"If true, the minting is stopped and cannot be resumed"},"isPaused":{"type":"boolean","description":"Indicates whether the collection is currently paused"}},"title":"CollectionData"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

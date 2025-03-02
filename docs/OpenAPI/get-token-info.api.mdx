@@ -1,0 +1,72 @@
+---
+id: get-token-info
+title: "Retrieve information about a fungible token."
+description: "The `info` endpoint retrieves detailed information about a specific fungible token deployed on the Mina blockchain."
+sidebar_label: "Retrieve information about a fungible token."
+hide_title: true
+hide_table_of_contents: true
+api: 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
+sidebar_class_name: "post api-method"
+info_path: OpenAPI/silvana-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Retrieve information about a fungible token."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/info/token"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+The `info` endpoint retrieves detailed information about a specific fungible token deployed on the Mina blockchain.
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"application/json":{"schema":{"type":"object","required":["tokenAddress"],"properties":{"tokenAddress":{"type":"string","description":"The address of the token contract.","example":"B62qphSRYqif9bPjw4Kg2G3CA7V7NzHqtpRzeXkY164n3C9jXqGAfkA"}},"title":"TokenInfoRequestParams"}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful retrieval of token information.","content":{"application/json":{"schema":{"type":"object","required":["tokenAddress","tokenId","adminContractAddress","adminAddress","adminTokenBalance","totalSupply","isPaused","decimals","tokenSymbol","verificationKeyHash","uri","version","adminTokenSymbol","adminUri","adminVerificationKeyHash","adminVersion"],"properties":{"tokenAddress":{"type":"string","description":"The address of the token contract."},"tokenId":{"type":"string","description":"The unique identifier of the token."},"adminContractAddress":{"type":"string","description":"The address of the admin contract."},"adminAddress":{"type":"string","description":"The address of the administrator."},"adminTokenBalance":{"type":"number","format":"double","description":"The token balance of the administrator."},"totalSupply":{"type":"number","format":"double","description":"The total supply of the token."},"isPaused":{"type":"boolean","description":"Indicates if the token contract is paused."},"decimals":{"type":"integer","format":"int32","description":"The number of decimal places the token uses."},"tokenSymbol":{"type":"string","description":"The symbol of the token."},"verificationKeyHash":{"type":"string","description":"The verification key hash of the token contract."},"uri":{"type":"string","description":"The URI of the token metadata."},"version":{"type":"integer","format":"int32","description":"The version number of the token contract."},"adminTokenSymbol":{"type":"string","description":"The symbol of the admin token."},"adminUri":{"type":"string","description":"The URI of the admin token metadata."},"adminVerificationKeyHash":{"type":"string","description":"The verification key hash of the admin contract."},"adminVersion":{"type":"integer","format":"int32"}},"title":"TokenState"},"examples":{"getTokenInfoSuccess":{"summary":"Example of a successful info response","value":{"tokenAddress":"B62qphSRYqif9bPjw4Kg2G3CA7V7NzHqtpRzeXkY164n3C9jXqGAfkA","tokenId":"xJweNxCErRwi5DfHCw7pAmTNioKxDGqHxDmRifXE6bLqPzHtHm","adminContractAddress":"B62qp4Z6cwEWWtmge5rkbXagzUdYHMxjMVnE1nevRkpvo4ZbA9pLTYF","adminAddress":"B62qjFmTAzmLvPXRhUn8H83BoqtQxFtqHe8DkYBrj44TP6uKWWNfa1a","adminTokenBalance":0,"totalSupply":1000,"isPaused":false,"decimals":9,"tokenSymbol":"TEST","verificationKeyHash":"22278758441605771858700252645311428360030262698072838723799702480887091310093","uri":"https://minatokens.com","version":0,"adminTokenSymbol":"","adminUri":"https://minatokens.com","adminVerificationKeyHash":"20172938263834569171197221661527530681186299670687606810012808881888777415767","adminVersion":0}}}}}},"400":{"description":"Bad request - invalid input parameters.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"401":{"description":"Unauthorized - user not authenticated.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"403":{"description":"Forbidden - user doesn't have permission.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"429":{"description":"Too many requests.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"500":{"description":"Internal server error - something went wrong during the request.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"503":{"description":"Service unavailable - blockchain or other external service is down.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

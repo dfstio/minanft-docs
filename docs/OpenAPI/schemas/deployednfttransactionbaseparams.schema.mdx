@@ -1,0 +1,33 @@
+---
+id: deployednfttransactionbaseparams
+title: "DeployedNftTransactionBaseParams"
+description: ""
+sidebar_label: "DeployedNftTransactionBaseParams"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"txType":"nft:launch","collectionAddress":"string","nftAddress":"string","sender":"string","senderPrivateKey":"string","nonce":0,"memo":"string","developerFee":0}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"DeployedNftTransactionBaseParams"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"allOf":[{"type":"object","required":["sender"],"properties":{"txType":{"description":"Type of the NFT transaction.","type":"string","enum":["nft:launch","nft:mint","nft:transfer","nft:approve","nft:sell","nft:buy"],"title":"NftTransactionType"},"collectionAddress":{"type":"string","description":"Optional. The address of the NFT collection."},"nftAddress":{"type":"string","description":"Optional. The address of the NFT."},"sender":{"type":"string","description":"The address (public key) of the sender."},"senderPrivateKey":{"type":"string","description":"The private key of the sender. It is NOT recommended to use this field. Please use the `sender` field instead. Use this field at your own risk and only if you know what you are doing and do not have access to mina-signer or wallet to get the signature."},"nonce":{"type":"integer","format":"int64","description":"Optional. The nonce for the transaction."},"memo":{"type":"string","description":"Optional. A memo for the transaction."},"developerFee":{"type":"number","format":"double","description":"Optional. The developer fee for the transaction."}},"title":"NftTransactionBaseParams"},{"type":"object","required":["collectionAddress","nftAddress"],"properties":{"collectionAddress":{"type":"string","description":"The address of the NFT collection."},"nftAddress":{"type":"string","description":"The address of the NFT."}}}],"title":"DeployedNftTransactionBaseParams"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

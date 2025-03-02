@@ -1,0 +1,33 @@
+---
+id: transactionpayloads
+title: "TransactionPayloads"
+description: ""
+sidebar_label: "TransactionPayloads"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"sender":"string","nonce":0,"memo":"string","fee":0,"walletPayload":{"nonce":0,"transaction":"string","onlySign":true,"feePayer":{"fee":0,"memo":"string"}},"minaSignerPayload":{"zkappCommand":{},"feePayer":{"feePayer":"string","fee":0,"nonce":0,"memo":"string"}},"proverPayload":"string","signedData":"string","transaction":"string","sendTransaction":true}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"TransactionPayloads"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","required":["sender","nonce","memo","fee","walletPayload","minaSignerPayload","proverPayload","signedData","transaction"],"properties":{"sender":{"type":"string","description":"The address initiating the transaction."},"nonce":{"type":"integer","format":"int64","description":"The nonce for the transaction."},"memo":{"type":"string","description":"A memo for the transaction."},"fee":{"type":"number","format":"double","description":"The fee for the transaction."},"walletPayload":{"type":"object","properties":{"nonce":{"type":"integer","format":"int64","description":"The nonce for the transaction."},"transaction":{"type":"string","description":"The transaction data."},"onlySign":{"type":"boolean","description":"Indicates if only signature is needed."},"feePayer":{"type":"object","properties":{"fee":{"type":"number","format":"double","description":"The fee for the transaction."},"memo":{"type":"string","description":"A memo for the transaction."}}}}},"minaSignerPayload":{"type":"object","required":["zkappCommand","feePayer"],"properties":{"zkappCommand":{"type":"object","additionalProperties":true,"description":"The zkApp command data."},"feePayer":{"type":"object","properties":{"feePayer":{"type":"string","description":"The fee payer's address."},"fee":{"type":"number","format":"double","description":"The fee for the transaction."},"nonce":{"type":"integer","format":"int64","description":"The nonce for the transaction."},"memo":{"type":"string","description":"A memo for the transaction."}}}}},"proverPayload":{"type":"string","description":"The payload for the prover."},"signedData":{"type":"string","description":"The signed data for the transaction."},"transaction":{"type":"string","description":"The raw transaction data."},"sendTransaction":{"type":"boolean","description":"Optional. Whether to broadcast the transaction after proving."}},"title":"TransactionPayloads"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

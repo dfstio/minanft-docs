@@ -1,0 +1,33 @@
+---
+id: launchtokentransactionbaseparams
+title: "LaunchTokenTransactionBaseParams"
+description: ""
+sidebar_label: "LaunchTokenTransactionBaseParams"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"txType":"token:launch","tokenAddress":"string","sender":"string","senderPrivateKey":"string","nonce":0,"memo":"string","developerFee":0,"adminContract":"standard","symbol":"string","decimals":0,"uri":"string","adminContractAddress":"string","tokenContractPrivateKey":"string","adminContractPrivateKey":"string"}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"LaunchTokenTransactionBaseParams"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"allOf":[{"type":"object","required":["sender"],"properties":{"txType":{"description":"Type of the token transaction.","type":"string","enum":["token:launch","token:mint","token:burn","token:redeem","token:transfer","token:bid:create","token:offer:create","token:offer:buy","token:bid:sell","token:airdrop","token:bid:withdraw","token:offer:withdraw","token:bid:whitelist","token:offer:whitelist","token:admin:whitelist"],"title":"TokenTransactionType"},"tokenAddress":{"type":"string","description":"Optional. The address of the token contract."},"sender":{"type":"string","description":"The address (public key) of the sender."},"senderPrivateKey":{"type":"string","description":"The private key of the sender. It is NOT recommended to use this field. Please use the `sender` field instead. Use this field at your own risk and only if you know what you are doing and do not have access to mina-signer or wallet to get the signature."},"nonce":{"type":"integer","format":"int64","description":"Optional. The nonce for the transaction."},"memo":{"type":"string","description":"Optional. A memo for the transaction."},"developerFee":{"type":"number","format":"double","description":"Optional. The developer fee for the transaction."}},"title":"TokenTransactionBaseParams"},{"type":"object","required":["adminContract","symbol","uri"],"properties":{"txType":{"type":"string","enum":["token:launch"],"description":"Must be \"token:launch\""},"adminContract":{"type":"string","enum":["standard","advanced","bondingCurve"],"description":"The type of admin contract to use."},"symbol":{"type":"string","description":"The symbol of the token."},"decimals":{"type":"integer","format":"int32","description":"Optional. The number of decimal places for the token."},"uri":{"oneOf":[{"type":"string","format":"uri"},{"type":"object","properties":{"symbol":{"type":"string","description":"The symbol of the token."},"name":{"type":"string","description":"Optional. The name of the token."},"description":{"type":"string","description":"Optional. Description of the token."},"imageUrl":{"type":"string","format":"uri","description":"Optional. URL of the token image."},"imageBase64":{"type":"string","description":"Optional. Base64-encoded image data (max 1 MB)."},"twitter":{"type":"string","description":"Optional. Twitter handle associated with the token."},"discord":{"type":"string","description":"Optional. Discord link associated with the token."},"telegram":{"type":"string","description":"Optional. Telegram link associated with the token."},"instagram":{"type":"string","description":"Optional. Instagram handle associated with the token."},"facebook":{"type":"string","description":"Optional. Facebook page associated with the token."},"website":{"type":"string","format":"uri","description":"Optional. Official website of the token."},"tokenContractCode":{"type":"string","description":"Optional. Code for the token contract."},"adminContractsCode":{"type":"array","items":{"type":"string"},"description":"Optional. Code for the admin contracts."}},"title":"TokenInfo"}],"description":"URI or token info object containing metadata."},"tokenAddress":{"type":"string","description":"Optional. The address of the token contract."},"adminContractAddress":{"type":"string","description":"Optional. The address of the admin contract."},"tokenContractPrivateKey":{"type":"string","description":"Optional. Private key for the token contract."},"adminContractPrivateKey":{"type":"string","description":"Optional. Private key for the admin contract."}}}],"title":"LaunchTokenTransactionBaseParams"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

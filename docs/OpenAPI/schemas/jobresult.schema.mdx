@@ -1,0 +1,33 @@
+---
+id: jobresult
+title: "JobResult"
+description: ""
+sidebar_label: "JobResult"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"success":true,"error":"string","tx":"string","status":"string","hash":"string"}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"JobResult"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","required":["success"],"properties":{"success":{"type":"boolean","description":"Indicates whether the proof generation for this transaction was successful."},"error":{"type":"string","description":"Error message if proof generation failed for this transaction."},"tx":{"type":"string","description":"The transaction data."},"status":{"type":"string","description":"The status of the transaction."},"hash":{"type":"string","description":"The transaction hash if broadcasted."}},"title":"JobResult"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

@@ -1,0 +1,33 @@
+---
+id: nftsellparams
+title: "NftSellParams"
+description: ""
+sidebar_label: "NftSellParams"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"price":0,"offerAddress":"string","offerPrivateKey":"string"}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"NftSellParams"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","required":["price"],"properties":{"price":{"type":"number","description":"The price of the NFT"},"offerAddress":{"type":"string","description":"The address of the offer contract"},"offerPrivateKey":{"type":"string","description":"The private key of the offer contract"}},"title":"NftSellParams"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

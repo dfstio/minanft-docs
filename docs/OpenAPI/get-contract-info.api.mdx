@@ -1,0 +1,71 @@
+---
+id: get-contract-info
+title: "Retrieve contract info"
+description: "Retrieves detailed information about a contract."
+sidebar_label: "Retrieve contract info"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWktz4zYM/iscXHqR7WzaHqpb9pE2s7NNJvH20MQHWIQtriVSS1JKHI/++w4oye8k3Zwaj3OJTRIgPnwgRAFegMepg/gWLvTE2By9MhpGEUhyiVVF+BrDNXmrqCInJHlUGUmhVusFjk3pBYrEaG8x8X2IwBRkw+yFhBim5D+0k7wRRGDpe0nOvzdyDvEifFWWJMTelhQBqyLteQqLIlNJ0DX45tieBbgkpRz5k58XBDGY8TdKfKu3UXQLKKUl5xhPYdkgr8gFle3ESt55q/QUtoEPU1qiEq1UH+oIvJlRgPaShsvwAbO+YF2tWB9q1qF8xpLrnrlu3AJ1zSssucJo1xh9enLC/zbV35RJQs5NykzYhiTMhJmsjGaexMRY4VMSU1WRXgOkpUiVEyhztTVsfEp2OeSET9ELtCQsZehJCm+ECkT/LFNoLc4hAuUpdy8xqDEniJZ8rfzObraqIjlcDrh5PjYZRFBaBRFUZNWkteYzzXdH/kKXQgSPMyyKf8i6NvI3IyUYwNCy7HIC8e3z5oa5CCrMStrV1UjuBgzpMl8Da032FOZXYYpgrKZKs626zMdkIYKJoowVjo3JCHmNKia819KoxolLn46NlkpPP5S2oi9K+yurEtoavyZJlDczo93wvmqcMR8y/Lrz0o4/anYbOdK+SUa7C/YcnU431NHiCa9veHlU1/WojtYTwZHhQ2F4mfZbktdy9ZHkQyG582ZH8tbj4Mj1AXPdQjxyfEAct5A6ihnnkd8D4peBdeRu+/NI9AERve3DJ0gPnjwSf7jEB4915G/47cj6AbG+WT4JdDfv1aqpe13tkT6y/X9le29NMhQj6wh+21eAfI9StLVc0RNKV5gprg4XpRcFWszJk3WvKRQug2QzEMhaY1+uu37iZSIn53BKbdla6WkogyrnStqswYbl1225FTq873bxftVY+tRY9UhS9ETpyAptvOBR0p5RkXyjcH/dhXtu7FhJSbrDKg05/YsXKVYkCrK5cnxQ3ibi0z92EQ+NETnqeRfVbzN2f993Vi+0J6sxE45sRVYEc0RPOJOTT3mHe9Je3Fujp0KWttuz9cQbdcSeqL4hW6mERKmxQpXhOCPRE+PMJLMkRaWFsW0HhB7WXMYiyglp7t9ivNcRMM2G+3GFccEQ9CnEMOAm0aBr9vCTK8SHCxe00mYQQ+p94eLBIFcawyPV9ROTD7BQg+rdYMfYL0qj+IJKa/LhErGpRVKlyfd/RtnHILJH1yPNzH9Q8i/NzFLJiCEmpVV+HjCeFeozzc9K9sbtaH36hklseFpftOpmhUG+AvAmKaEMV4SmbQQPPSxUbxYWbJpzdnUhZjQPnbnugRLCpy/+JC/mprSiW4NePO3+QDqH3PWqofrpAfMio41O5yqsluXwtUsDB0BA1UbPjcoq1CguC9JnVxd7zWfTFWcUTHzIHcqnInB1Xuqp4jMVqrEuNBT/Ph+6/p0O83kTGIK0LIzSPn4GH5PZijVRs0fq2XC604H6J4X3x8+d/mgSt7aFSdz2Bnd6m6rngNzp5sbZvALBSf+0fxrua8b5HPWq2bjstm82cbc5WKzyz2v68238enrwgyJDpSFU3UJVtUkLt9Buu0wMowhSThzxLSwWY3T01WZ1zcPfS7J8lEZ8M7WKE2o4SVF3JPiU8TlobpakfW+4ft2PdzMon/RG4ixJqPDPrh2t5bary5thuFw3vyzIjWQZi/f8eoD3EEP4eQJLh3MdxhaQoZ6WOOW1jU7++wGNxZwS
+sidebar_class_name: "post api-method"
+info_path: OpenAPI/silvana-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Retrieve contract info"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/info/contract"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieves detailed information about a contract.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"application/json":{"schema":{"type":"object","required":["address"],"properties":{"address":{"type":"string","description":"The contract address."},"tokenId":{"type":"string","description":"Optional. The tokenId."}},"title":"ContractInfoRequest"}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful retrieval of contract info for the given contract and his admin contract and other contracts that are related to it.","content":{"application/json":{"schema":{"type":"array","items":{"type":"object","required":["name","address","tokenId","derivedTokenId","symbol","uri","verificationKey","verificationKeyHash","zkappVersion"],"properties":{"name":{"allOf":[{"type":"object","required":["type","value"],"properties":{"type":{"type":"string","enum":["name","role","address","tokenId","verificationKey","verificationKeyHash","zkappVersion","bigint","number","field","boolean","ipfs","string","uri","symbol","bondingCurveMintPrice","bondingCurveRedeemPrice"],"title":"ContractPropertyType"},"value":{"type":"string"},"presentation":{"type":"string"}},"title":"ContractProperty"},{"properties":{"type":{"enum":["name"]}}}]},"address":{"allOf":[{"type":"object","required":["type","value"],"properties":{"type":{"type":"string","enum":["name","role","address","tokenId","verificationKey","verificationKeyHash","zkappVersion","bigint","number","field","boolean","ipfs","string","uri","symbol","bondingCurveMintPrice","bondingCurveRedeemPrice"],"title":"ContractPropertyType"},"value":{"type":"string"},"presentation":{"type":"string"}},"title":"ContractProperty"},{"properties":{"type":{"enum":["address"]}}}]},"tokenId":{"allOf":[{"type":"object","required":["type","value"],"properties":{"type":{"type":"string","enum":["name","role","address","tokenId","verificationKey","verificationKeyHash","zkappVersion","bigint","number","field","boolean","ipfs","string","uri","symbol","bondingCurveMintPrice","bondingCurveRedeemPrice"],"title":"ContractPropertyType"},"value":{"type":"string"},"presentation":{"type":"string"}},"title":"ContractProperty"},{"properties":{"type":{"enum":["tokenId"]}}}]},"derivedTokenId":{"allOf":[{"type":"object","required":["type","value"],"properties":{"type":{"type":"string","enum":["name","role","address","tokenId","verificationKey","verificationKeyHash","zkappVersion","bigint","number","field","boolean","ipfs","string","uri","symbol","bondingCurveMintPrice","bondingCurveRedeemPrice"],"title":"ContractPropertyType"},"value":{"type":"string"},"presentation":{"type":"string"}},"title":"ContractProperty"},{"properties":{"type":{"enum":["tokenId"]}}}]},"symbol":{"allOf":[{"type":"object","required":["type","value"],"properties":{"type":{"type":"string","enum":["name","role","address","tokenId","verificationKey","verificationKeyHash","zkappVersion","bigint","number","field","boolean","ipfs","string","uri","symbol","bondingCurveMintPrice","bondingCurveRedeemPrice"],"title":"ContractPropertyType"},"value":{"type":"string"},"presentation":{"type":"string"}},"title":"ContractProperty"},{"properties":{"type":{"enum":["symbol"]}}}]},"uri":{"allOf":[{"type":"object","required":["type","value"],"properties":{"type":{"type":"string","enum":["name","role","address","tokenId","verificationKey","verificationKeyHash","zkappVersion","bigint","number","field","boolean","ipfs","string","uri","symbol","bondingCurveMintPrice","bondingCurveRedeemPrice"],"title":"ContractPropertyType"},"value":{"type":"string"},"presentation":{"type":"string"}},"title":"ContractProperty"},{"properties":{"type":{"enum":["uri"]}}}]},"verificationKey":{"allOf":[{"type":"object","required":["type","value"],"properties":{"type":{"type":"string","enum":["name","role","address","tokenId","verificationKey","verificationKeyHash","zkappVersion","bigint","number","field","boolean","ipfs","string","uri","symbol","bondingCurveMintPrice","bondingCurveRedeemPrice"],"title":"ContractPropertyType"},"value":{"type":"string"},"presentation":{"type":"string"}},"title":"ContractProperty"},{"properties":{"type":{"enum":["verificationKey"]}}}]},"verificationKeyHash":{"allOf":[{"type":"object","required":["type","value"],"properties":{"type":{"type":"string","enum":["name","role","address","tokenId","verificationKey","verificationKeyHash","zkappVersion","bigint","number","field","boolean","ipfs","string","uri","symbol","bondingCurveMintPrice","bondingCurveRedeemPrice"],"title":"ContractPropertyType"},"value":{"type":"string"},"presentation":{"type":"string"}},"title":"ContractProperty"},{"properties":{"type":{"enum":["verificationKeyHash"]}}}]},"zkappVersion":{"allOf":[{"type":"object","required":["type","value"],"properties":{"type":{"type":"string","enum":["name","role","address","tokenId","verificationKey","verificationKeyHash","zkappVersion","bigint","number","field","boolean","ipfs","string","uri","symbol","bondingCurveMintPrice","bondingCurveRedeemPrice"],"title":"ContractPropertyType"},"value":{"type":"string"},"presentation":{"type":"string"}},"title":"ContractProperty"},{"properties":{"type":{"enum":["zkappVersion"]}}}]}},"additionalProperties":{"type":"object","required":["type","value"],"properties":{"type":{"type":"string","enum":["name","role","address","tokenId","verificationKey","verificationKeyHash","zkappVersion","bigint","number","field","boolean","ipfs","string","uri","symbol","bondingCurveMintPrice","bondingCurveRedeemPrice"],"title":"ContractPropertyType"},"value":{"type":"string"},"presentation":{"type":"string"}},"title":"ContractProperty"},"title":"ContractInfo"}}}}},"400":{"description":"Bad request - invalid input parameters.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"401":{"description":"Unauthorized - user not authenticated.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"403":{"description":"Forbidden - user doesn't have permission.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"429":{"description":"Too many requests.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"500":{"description":"Internal server error - something went wrong during the request.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"503":{"description":"Service unavailable - blockchain or other external service is down.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      
