@@ -10,6 +10,7 @@ sidebar_position: 2
 git clone https://github.com/SilvanaOne/silvana-lib
 cd silvana-lib
 npm i
+npm run build
 ```
 
 ## Setup environment
