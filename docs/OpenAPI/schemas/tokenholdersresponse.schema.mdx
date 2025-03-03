@@ -1,0 +1,33 @@
+---
+id: tokenholdersresponse
+title: "TokenHoldersResponse"
+description: ""
+sidebar_label: "TokenHoldersResponse"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"holders":[{"address":"string","balance":0,"percentage":0,"isZkappAccount":true}]}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"TokenHoldersResponse"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","required":["holders"],"properties":{"holders":{"type":"array","items":{"type":"object","required":["address","balance","percentage","isZkappAccount"],"properties":{"address":{"type":"string","description":"The address of the token holder"},"balance":{"type":"number","description":"The total token balance held by this address"},"percentage":{"type":"number","description":"The percentage of total token supply held by this address"},"isZkappAccount":{"type":"boolean","description":"Whether this holder is a zkApp account"}},"title":"TokenHolder"},"description":"Array of token holders and their balances"}},"title":"TokenHoldersResponse"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

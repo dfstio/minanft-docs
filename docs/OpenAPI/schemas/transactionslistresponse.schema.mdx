@@ -1,0 +1,33 @@
+---
+id: transactionslistresponse
+title: "TransactionsListResponse"
+description: ""
+sidebar_label: "TransactionsListResponse"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"transactions":[{"timestamp":0,"status":"string","updatedAccounts":[{"accountAddress":"string","isZkappAccount":true,"verificationKeyHash":"string"}],"accountUpdatesCount":0,"proverAddress":"string","isZkappAccount":true,"hash":"string","fee":0,"memo":"string"}]}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"TransactionsListResponse"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","required":["transactions"],"properties":{"transactions":{"type":"array","items":{"type":"object","required":["timestamp","status","updatedAccounts","accountUpdatesCount","proverAddress","isZkappAccount","hash","fee","memo"],"properties":{"timestamp":{"type":"number","description":"Timestamp of the transaction"},"status":{"type":"string","description":"Status of the transaction"},"updatedAccounts":{"type":"array","items":{"type":"object","required":["accountAddress","isZkappAccount"],"properties":{"accountAddress":{"type":"string","description":"Address of the updated account"},"isZkappAccount":{"type":"boolean","description":"Whether this is a zkApp account"},"verificationKeyHash":{"type":"string","description":"Hash of the verification key"}}}},"accountUpdatesCount":{"type":"number","description":"Number of account updates in the transaction"},"proverAddress":{"type":"string","description":"Address of the prover"},"isZkappAccount":{"type":"boolean","description":"Whether this is a zkApp account"},"hash":{"type":"string","description":"Transaction hash"},"fee":{"type":"number","description":"Transaction fee"},"memo":{"type":"string","description":"Transaction memo"}},"title":"TransactionData"},"description":"Array of transactions"}},"title":"TransactionsListResponse"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

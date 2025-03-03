@@ -145,13 +145,13 @@ const sidebar: SidebarsConfig = {
         {
           type: "doc",
           id: "OpenAPI/get-nft-info",
-          label: "Retrieve NFT Info",
+          label: "Retrieve NFT Info for Mina NFT V3",
           className: "api-method post",
         },
         {
           type: "doc",
           id: "OpenAPI/get-nft-v-2-info",
-          label: "Retrieve NFT Info",
+          label: "Retrieve NFT Info for Mina NFT V2",
           className: "api-method post",
         },
         {
@@ -170,6 +170,18 @@ const sidebar: SidebarsConfig = {
           type: "doc",
           id: "OpenAPI/get-nonce",
           label: "Retrieve the nonce for an address",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "OpenAPI/get-token-holders",
+          label: "Retrieve the holders of a token",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "OpenAPI/get-transactions",
+          label: "Retrieve the transactions of a address",
           className: "api-method post",
         },
       ],
@@ -252,6 +264,12 @@ const sidebar: SidebarsConfig = {
         },
         {
           type: "doc",
+          id: "OpenAPI/schemas/transactionslistrequestparams",
+          label: "TransactionsListRequestParams",
+          className: "schema",
+        },
+        {
+          type: "doc",
           id: "OpenAPI/schemas/balanceresponse",
           label: "BalanceResponse",
           className: "schema",
@@ -266,6 +284,36 @@ const sidebar: SidebarsConfig = {
           type: "doc",
           id: "OpenAPI/schemas/nonceresponse",
           label: "NonceResponse",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "OpenAPI/schemas/tokenholder",
+          label: "TokenHolder",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "OpenAPI/schemas/tokenholdersrequestparams",
+          label: "TokenHoldersRequestParams",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "OpenAPI/schemas/tokenholdersresponse",
+          label: "TokenHoldersResponse",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "OpenAPI/schemas/transactiondata",
+          label: "TransactionData",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "OpenAPI/schemas/transactionslistresponse",
+          label: "TransactionsListResponse",
           className: "schema",
         },
         {

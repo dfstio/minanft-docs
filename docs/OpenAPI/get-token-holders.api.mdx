@@ -1,0 +1,72 @@
+---
+id: get-token-holders
+title: "Retrieve the holders of a token"
+description: "The `holders` endpoint retrieves the holders of a token."
+sidebar_label: "Retrieve the holders of a token"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVWEtz2zYQ/isYXHqhpMRukwlvimM3nowTNZbbJI5nsiJXIiwSQIClHtbov3cWJPW24457MS8SiX3vt8tdLiTByMv4Wp7roXEFkDJa3kQyRZ84ZcNtLPsZih+ZyVN0/odAnVqjNAmH5BRO0AvKUNTnwgwFCDJj1O3vWkbSWHRB7nkqYzlC6vPZ+4paRtLhzxI9vTXpXMaLcKscpjImV2IkE6MJNfERWJurJMjq3Hq2bCF9kmEB/I/mFmUszeAWE6rlVoKuJaSpQ+/ZM+vYIFLog8j6YM3vySk9kodCcKE0iJpDDI0T00wlmSCzisRmIORyGUlSlLPUTZ8/Vw73wEHh5TKSOIPC5pVBO/GpaYOnZVGAm8tYnlb0G5FeBb8OpozkBPISt1yUb18d/TTlhwu6SK5mMBi/PppMv12+pq/HX76eJvDypPdh9KU3vNMn76/U37e9N6evZrO/7uQyXBxRb432laFHL17wz3aULsskQe+HZd6EBHI2c8vItvyfstoEei+rzcGaH5yDuYykIiz8Y9ESyQHkoBOUkbToEtQEI75R/tsYrO0miSk1PRFVDaA4TBluhYrB0ZiwlqXLYoDuoCwyBHktomYUGeapGMwFZco3yljwhkePkr2mrzK61uRLa/P5vYp2orVWNjAmR9B72v7JkDJ0laAqEoJFirtx11oBtaB76otVbsvrcvL3YChApxxx5ZpQPVSyFfJlVQi/H8L+W0ib8hMtofQEcpUKpW1JwnKtIz0V/NsoQ+eM+zXGTplMFOg9py5FApUrPQpgU96X2N5yO5Dv+fty398rDSVlxqk7TEVLlB6d0IYEP0VN7BWmz9Td4313z4wbqDRF3fiaGvT6NxIZTEJxFMp7ZfTz9Pjozb7HfWNEAXreoPp5YvePQ7V6rgmdhlx4dBN0IpgjWsKbAiljDVPUJKbO6JFIS9forCPxTANxANWX6CYqQVFqmIDKYZCjaIlBbpJxkoHSwjhhQjPG2UbImEV5kZrpc8T7MpKcZsPzqDVhWrJAmYxlR+mh6WSr2bSCBw/IC1m6XMYyI7I+7nQKpSG8Tnw7MUUHrOpMXnb2bA0j4wUorZHkMtqVkuJEI7X/i7B3geWArDscm0cI+YZjsxJywy4mpVM0Dz52rfqA827Jwbi+2Ty+5BxWadokWg9Y4SHPRqwkQ0jDGKGh4NNZC6xqjQPBzru5dy7GOA/jdPM+Cehpiz+RxNyUTjQ0QOL+8IecM+I+r/eJelDenoJrVPFgoocmuFAj5VLlE9AgPlnU3d75QVvZTsXdAxIKfUJRVi0GZ6UeKa6fMDhU48XHs75vf9ffdaAoKhysFqj4AXc4dyvGCiYH+B7ED7OHbN/LfhgyzLftjHhnEr+h1SR+VyczfTzr30eph9RWJlDtpvWhKDD9iUlxTTNSlJWDcF6n65PGjq/+tnI1YJY677/iCroCMusNLOyrXPBVvl+0j9rHYVQ2ngoIvawG9OcDC9/GPrYLncW6RT5tma6rjXBGHZuD0mxe6AOLuoddV7CONrejjJtcfC0XiwF4vHL5csmPf5bI++T1DW+LTnHzD2UfNfXLLYGLNpYnlfmtPutfLZf73Z7bUsXRTRK09CDtzUYf7n267PPCVX8FKEzKPA6mvJvBVMYyfEpg7tCEwrOFzEGPyrDCyEomX/8CVSTwng==
+sidebar_class_name: "post api-method"
+info_path: OpenAPI/silvana-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Retrieve the holders of a token"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/info/holders"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+The `holders` endpoint retrieves the holders of a token.
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"application/json":{"schema":{"type":"object","required":["address"],"properties":{"address":{"type":"string","description":"The Mina address for which to retrieve the holders"}},"title":"TokenHoldersRequestParams"},"examples":{"getTokenHoldersRequest":{"summary":"Example of a token holders request","value":{"address":"B62qouKMtMcUxabk72vwZS7tY3XYEca1CPKgXPfznCHUiVjP9E6xxQz"}}}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful retrieval of token holders.","content":{"application/json":{"schema":{"type":"object","required":["holders"],"properties":{"holders":{"type":"array","items":{"type":"object","required":["address","balance","percentage","isZkappAccount"],"properties":{"address":{"type":"string","description":"The address of the token holder"},"balance":{"type":"number","description":"The total token balance held by this address"},"percentage":{"type":"number","description":"The percentage of total token supply held by this address"},"isZkappAccount":{"type":"boolean","description":"Whether this holder is a zkApp account"}},"title":"TokenHolder"},"description":"Array of token holders and their balances"}},"title":"TokenHoldersResponse"}}}},"400":{"description":"Bad request - invalid input parameters.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"401":{"description":"Unauthorized - user not authenticated.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"403":{"description":"Forbidden - user doesn't have permission.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"429":{"description":"Too many requests.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"500":{"description":"Internal server error - something went wrong during the request.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"503":{"description":"Service unavailable - blockchain or other external service is down.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      
