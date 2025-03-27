@@ -1,0 +1,33 @@
+---
+id: tokenupdatebidwhitelisttransactionparams
+title: "TokenUpdateBidWhitelistTransactionParams"
+description: ""
+sidebar_label: "TokenUpdateBidWhitelistTransactionParams"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"txType":"token:bid:whitelist","tokenAddress":"string","sender":"string","senderPrivateKey":"string","nonce":0,"memo":"string","developerFee":0,"bidAddress":"string","whitelist":[{"address":"string","amount":0}]}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"TokenUpdateBidWhitelistTransactionParams"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"allOf":[{"allOf":[{"type":"object","required":["sender"],"properties":{"txType":{"description":"Type of the token transaction.","type":"string","enum":["token:launch","token:mint","token:burn","token:redeem","token:transfer","token:bid:create","token:offer:create","token:offer:buy","token:bid:sell","token:airdrop","token:bid:withdraw","token:offer:withdraw","token:bid:whitelist","token:offer:whitelist","token:admin:whitelist"],"title":"TokenTransactionType"},"tokenAddress":{"type":"string","description":"Optional. The address of the token contract."},"sender":{"type":"string","description":"The address (public key) of the sender."},"senderPrivateKey":{"type":"string","description":"The private key of the sender. It is NOT recommended to use this field. Please use the `sender` field instead. Use this field at your own risk and only if you know what you are doing and do not have access to mina-signer or wallet to get the signature."},"nonce":{"type":"integer","format":"int64","description":"Optional. The nonce for the transaction."},"memo":{"type":"string","description":"Optional. A memo for the transaction."},"developerFee":{"type":"number","format":"double","description":"Optional. The developer fee for the transaction."}},"title":"TokenTransactionBaseParams"},{"type":"object","required":["tokenAddress"],"properties":{"tokenAddress":{"type":"string","description":"The address of the token contract."}}}],"title":"DeployedTokenTransactionBaseParams"},{"type":"object","required":["bidAddress","whitelist"],"properties":{"txType":{"type":"string","enum":["token:bid:whitelist"],"description":"Must be \"token:bid:whitelist\""},"bidAddress":{"type":"string","description":"The address of the bid to update whitelist for."},"whitelist":{"oneOf":[{"type":"array","items":{"type":"object","required":["address"],"properties":{"address":{"type":"string","description":"The whitelisted address."},"amount":{"type":"number","format":"double","description":"Optional. The amount allowed to bid."}}}},{"type":"string"}],"description":"Optional. List of whitelisted addresses with optional amounts, or a string.","title":"Whitelist"}}}],"title":"TokenUpdateBidWhitelistTransactionParams"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

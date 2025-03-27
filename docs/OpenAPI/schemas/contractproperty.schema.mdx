@@ -1,0 +1,33 @@
+---
+id: contractproperty
+title: "ContractProperty"
+description: ""
+sidebar_label: "ContractProperty"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"type":"name","value":"string","presentation":"string"}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"ContractProperty"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","required":["type","value"],"properties":{"type":{"type":"string","enum":["name","role","address","tokenId","verificationKey","verificationKeyHash","zkappVersion","bigint","number","field","boolean","ipfs","string","uri","symbol","bondingCurveMintPrice","bondingCurveRedeemPrice"],"title":"ContractPropertyType"},"value":{"type":"string"},"presentation":{"type":"string"}},"title":"ContractProperty"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

@@ -1,0 +1,33 @@
+---
+id: contractinfo
+title: "ContractInfo"
+description: ""
+sidebar_label: "ContractInfo"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"name":{"type":"name","value":"string","presentation":"string"},"address":{"type":"address","value":"string","presentation":"string"},"tokenId":{"type":"tokenId","value":"string","presentation":"string"},"derivedTokenId":{"type":"tokenId","value":"string","presentation":"string"},"symbol":{"type":"symbol","value":"string","presentation":"string"},"uri":{"type":"uri","value":"string","presentation":"string"},"verificationKey":{"type":"verificationKey","value":"string","presentation":"string"},"verificationKeyHash":{"type":"verificationKeyHash","value":"string","presentation":"string"},"zkappVersion":{"type":"zkappVersion","value":"string","presentation":"string"}}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"ContractInfo"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","required":["name","address","tokenId","derivedTokenId","symbol","uri","verificationKey","verificationKeyHash","zkappVersion"],"properties":{"name":{"allOf":[{"type":"object","required":["type","value"],"properties":{"type":{"type":"string","enum":["name","role","address","tokenId","verificationKey","verificationKeyHash","zkappVersion","bigint","number","field","boolean","ipfs","string","uri","symbol","bondingCurveMintPrice","bondingCurveRedeemPrice"],"title":"ContractPropertyType"},"value":{"type":"string"},"presentation":{"type":"string"}},"title":"ContractProperty"},{"properties":{"type":{"enum":["name"]}}}]},"address":{"allOf":[{"type":"object","required":["type","value"],"properties":{"type":{"type":"string","enum":["name","role","address","tokenId","verificationKey","verificationKeyHash","zkappVersion","bigint","number","field","boolean","ipfs","string","uri","symbol","bondingCurveMintPrice","bondingCurveRedeemPrice"],"title":"ContractPropertyType"},"value":{"type":"string"},"presentation":{"type":"string"}},"title":"ContractProperty"},{"properties":{"type":{"enum":["address"]}}}]},"tokenId":{"allOf":[{"type":"object","required":["type","value"],"properties":{"type":{"type":"string","enum":["name","role","address","tokenId","verificationKey","verificationKeyHash","zkappVersion","bigint","number","field","boolean","ipfs","string","uri","symbol","bondingCurveMintPrice","bondingCurveRedeemPrice"],"title":"ContractPropertyType"},"value":{"type":"string"},"presentation":{"type":"string"}},"title":"ContractProperty"},{"properties":{"type":{"enum":["tokenId"]}}}]},"derivedTokenId":{"allOf":[{"type":"object","required":["type","value"],"properties":{"type":{"type":"string","enum":["name","role","address","tokenId","verificationKey","verificationKeyHash","zkappVersion","bigint","number","field","boolean","ipfs","string","uri","symbol","bondingCurveMintPrice","bondingCurveRedeemPrice"],"title":"ContractPropertyType"},"value":{"type":"string"},"presentation":{"type":"string"}},"title":"ContractProperty"},{"properties":{"type":{"enum":["tokenId"]}}}]},"symbol":{"allOf":[{"type":"object","required":["type","value"],"properties":{"type":{"type":"string","enum":["name","role","address","tokenId","verificationKey","verificationKeyHash","zkappVersion","bigint","number","field","boolean","ipfs","string","uri","symbol","bondingCurveMintPrice","bondingCurveRedeemPrice"],"title":"ContractPropertyType"},"value":{"type":"string"},"presentation":{"type":"string"}},"title":"ContractProperty"},{"properties":{"type":{"enum":["symbol"]}}}]},"uri":{"allOf":[{"type":"object","required":["type","value"],"properties":{"type":{"type":"string","enum":["name","role","address","tokenId","verificationKey","verificationKeyHash","zkappVersion","bigint","number","field","boolean","ipfs","string","uri","symbol","bondingCurveMintPrice","bondingCurveRedeemPrice"],"title":"ContractPropertyType"},"value":{"type":"string"},"presentation":{"type":"string"}},"title":"ContractProperty"},{"properties":{"type":{"enum":["uri"]}}}]},"verificationKey":{"allOf":[{"type":"object","required":["type","value"],"properties":{"type":{"type":"string","enum":["name","role","address","tokenId","verificationKey","verificationKeyHash","zkappVersion","bigint","number","field","boolean","ipfs","string","uri","symbol","bondingCurveMintPrice","bondingCurveRedeemPrice"],"title":"ContractPropertyType"},"value":{"type":"string"},"presentation":{"type":"string"}},"title":"ContractProperty"},{"properties":{"type":{"enum":["verificationKey"]}}}]},"verificationKeyHash":{"allOf":[{"type":"object","required":["type","value"],"properties":{"type":{"type":"string","enum":["name","role","address","tokenId","verificationKey","verificationKeyHash","zkappVersion","bigint","number","field","boolean","ipfs","string","uri","symbol","bondingCurveMintPrice","bondingCurveRedeemPrice"],"title":"ContractPropertyType"},"value":{"type":"string"},"presentation":{"type":"string"}},"title":"ContractProperty"},{"properties":{"type":{"enum":["verificationKeyHash"]}}}]},"zkappVersion":{"allOf":[{"type":"object","required":["type","value"],"properties":{"type":{"type":"string","enum":["name","role","address","tokenId","verificationKey","verificationKeyHash","zkappVersion","bigint","number","field","boolean","ipfs","string","uri","symbol","bondingCurveMintPrice","bondingCurveRedeemPrice"],"title":"ContractPropertyType"},"value":{"type":"string"},"presentation":{"type":"string"}},"title":"ContractProperty"},{"properties":{"type":{"enum":["zkappVersion"]}}}]}},"additionalProperties":{"type":"object","required":["type","value"],"properties":{"type":{"type":"string","enum":["name","role","address","tokenId","verificationKey","verificationKeyHash","zkappVersion","bigint","number","field","boolean","ipfs","string","uri","symbol","bondingCurveMintPrice","bondingCurveRedeemPrice"],"title":"ContractPropertyType"},"value":{"type":"string"},"presentation":{"type":"string"}},"title":"ContractProperty"},"title":"ContractInfo"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

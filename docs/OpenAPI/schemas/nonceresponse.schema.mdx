@@ -1,0 +1,33 @@
+---
+id: nonceresponse
+title: "NonceResponse"
+description: ""
+sidebar_label: "NonceResponse"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"address":"string","nonce":0,"hasAccount":true}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"NonceResponse"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","required":["address"],"properties":{"address":{"type":"string","description":"The Mina address for which the nonce was requested."},"nonce":{"type":"number","description":"The nonce for the specified address."},"hasAccount":{"type":"boolean","description":"Indicates whether the account exists."}},"title":"NonceResponse"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

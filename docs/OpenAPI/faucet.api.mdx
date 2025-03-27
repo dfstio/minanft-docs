@@ -1,0 +1,71 @@
+---
+id: faucet
+title: "Request Funds from Faucet"
+description: "Requests funds from the faucet for testing purposes."
+sidebar_label: "Request Funds from Faucet"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVV0tz20YM/isYXNrOUJLjtIfy5jzc8XQSe2zlUlsHiAuJG5O7zD4kKxr99wyWpC3JspOmvdgXS7t4ffgACLvGQHOP+TWeUiw44CRDxb5wugnaGszxkr9E9sHDLBrlYeZsDaFkmCV5mFkHgX3QZg5NdI317IeYoW3YkZg4U5hjK4wZutbaG6tWmK/TV+1YYR5c5AwLawKbIFfUNJUukonRZy+hrNEXJdckn8KqYczRTj9z0dttDV0jKeXYe4HSOIkjaPbJZHfxoO+D02aO+5jHJcMHbQg6Dfi1idNKF3DLq98gWHBcsF5wSoSgh2Bv2fghbjYZBh0qMd5m9IIc1R43G7ly7BtrfBvO8dGR/Nt13SpBL4j/ISe74H0sil3wU2srJvMI/ZlR4oQ9LEsOJbttvjsCYUkeOpOzWA1xk2FJvvyx3AZHxlMhJyBaYGfbPtL1jB3o2b4Pds667zt5L2JQs/c0ZzEj1vvQZ6QrVoe4uuyz3rL1+yGC3pC6tzQAbRZUaQXaNDFAI1xzYJda4H8i7qcgKw6kK2lKQa69j7wLOIk/wvvqMd5PhmIordNfWcEAomcHxgaQUzYhVYp6oXBfH+g/66ZaKTY9VmXZm18ClLRgaNjV2nttzctEfPznY8Rja6Ems+qr+mXW7h+HevXMBHaGKvDsFuwghQMD8LbmUIqHJZsAS2fNHFR0vc8uEy80EQeq+ordQhcM0dCCdEXTimEA08oWt0VJ2oB1YNOo57utlImK9qDs8iXW+yZDodnKAtJYnwKhUGKOo/t9pC0MWYDWGF2FOZYhND4fjWptqPtVL2w9okaPFq9Gj6JMa8IH0sZwwE22b0XxwnAY/htj75LKAVtf+db+gJF/+NbeG5kIxCI6HVYJ40mj/+bVSZQ0XE+2r6+EvZagbaF7ligdYoZanJRMih1maKiW27sBNXpwmwR2wzm5OJO1KS2K/S9Jqpsh/MUBVjY66GUowNPpT2xLrV0+7JDv76huhP6t5a6vp42EOrMJQlcjV7pakCE4b9icXJwdjFXi1DI3ZD+RCaFD2S6Dp9HMtXTOOMUFZBR8PB374Y25MUmibusA2KjGahPyZ+AId/eKbZkc0Hu2fkQ9sf2k+uGSEb1dMPDOFn7Lqy38vk9R+ng6fkrSzMJQ2yS1T+tzWRD5t1bxg8xchzJO031H17nhkW8/Dio9FZWO9+9pJV+pMrlVuJFtVxq+5ftoeDx8LYUi46GmNMW6gu6KTEjvXz2n/dDYKZr1w1j82bdS12GB78KoqUgbCSn1/rqbWNf9C2qSYSmjLL/G9XpKnj+5arOR4y+RnfT4JMMFOS0jPrV41veqtL80aI5v24AHY/Er4lVsO3xvpssIajVOioKb8KzsZGvaXpxfjTHDaffKq60SHUdLeanREnNML0TRTgMnna2xIjOPNBfZ1qb8fQMTEyi0
+sidebar_class_name: "post api-method"
+info_path: OpenAPI/silvana-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Request Funds from Faucet"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/faucet"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Requests funds from the faucet for testing purposes.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"application/json":{"schema":{"type":"object","required":["address"],"properties":{"address":{"type":"string","description":"The Mina address (public key) to receive the test tokens."}},"title":"FaucetParams"}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Faucet response","content":{"application/json":{"schema":{"type":"object","properties":{"success":{"type":"boolean","description":"Indicates whether the faucet request was successful."},"hash":{"type":"string","description":"The transaction hash of the faucet transfer if successful."},"error":{"type":"string","description":"Error message if the request failed."}},"title":"FaucetResponse"}}}},"400":{"description":"Bad request - invalid input parameters.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"401":{"description":"Unauthorized - user not authenticated.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"403":{"description":"Forbidden - user doesn't have permission.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"429":{"description":"Too many requests.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"500":{"description":"Internal server error - something went wrong during the request.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"503":{"description":"Service unavailable - blockchain or other external service is down.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

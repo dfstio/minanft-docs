@@ -1,0 +1,72 @@
+---
+id: get-nonce
+title: "Retrieve the nonce for an address"
+description: "The `nonce` endpoint retrieves the nonce for a given Mina address, taking into account the pending transactions."
+sidebar_label: "Retrieve the nonce for an address"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVV21v20YM/ivEfdkX2W7SrUX1LU2TLSjSuo0ztE0DlJZo62qJp96d/BLD/33gSfJL7KQbNmCIv9jWkTw+5EOKXCqPY6fiG3XBI2ML9Nqwuo1USi6xugx/YzXICL6x4YS+AXFaGs0eLHmraUoOfEYQTmFkLCCM9ZQYLjUjYJpaci4CjxPNY9DsDWCSmIp90CuJUznwFtlhIhe67ldWkTIl2eDPRapiNSb/Tq5QkbL0oyLnX5t0oeJl+KstpSr2tqJIJYY9sZcjLMtcJ8FI77sTKEvlkowKlF9+UZKKlRl+p8Q3dmtDN6rxW0JRWvHEa3LBZHOw0Xfeah6rQzHbDkGIzSzTSQberIO3iV1XrVaR8trnYjRg/VgD7aPFwqlVpGiORZnXjrQBaYQCtKoo0C5UrM5qQTAjwCY1TdRUpKaYV7SDRb1+cfzDVG8v/WVyPcfh5OXxdPbl6qX//PzT57MEj077b8ef+qM7Pv3jWv/5vf/q7MV8/uFOrcJHQudKw6727PjZM/naDcdVlSTk3KjKW+yYi3sN9ieRtjXNZ+jaeFLalcyE51vWuSqGZA9a31SKGHQlJXqkKW0vDOYydCd1kWzZHBqTE/Ke0QtOJVrkYJaRz6g23BYZzbXz7iC76pw9RKwmY48Qy21y2nKsMblFsiYyR9F/QLfdwEi5twT89RDnXmPapgk6oHmKuU5Bc1l5KKWoyJN1/4p8uywja439OcfORAwKcg7HBCl51HnogRmBdq661wuC+CZbDd6jfbzXjJXPjNV3lEIHKkcW2HiQp8Q+kCR9onCf78M9N3ao05S4xZoacvyLhwyn8mKxhXZOG36aiI9f7SMeGAMF8qJl9dPk7m+HavWCPVnGHBzZKVkI7kAHnCnIZ3LDjNjDzBoeQ1rZ9s4mEk80EAdYfUV2qhOCinGKOsdhTtCBYW6SSZKhZjAWTOjyNN8KmahoB6mZPUW+ryIlaTYy6ZUmTCkl+kzFqqd5ZHrcjH41OWRgXarK5ipWmfeli3u9QjN6MyF23cQUPSx1b3rU2/M0vNovUTOTV6vovpWUpky++0+MvQkqB2zd0cT8DSNfaGLWRm4FYlJZ7RcB40mp39LipJJQ3NxuH19JBuskbQutM4XhoYqUlksywjSMI4yFnM47WOrOJAjsunPSv4AJLepJvnmbBO504XfysDCVhVYGPTwc/pBx4dvHzbjeTA+7s2fDqZW4OjIBQsOTK51PkRHel8Qn/YuDvoqfWnqH7A7SJbTP6gHuvOKxluoZBL8AOYV35wPZLr5ykChqHqxXmvgROJK7tWJNkwN6j/JH1EO2H1Q/TBnR2wUDb0zitm41ibt/pyi9Ox88JMkj39UmSN1P62NREPlTk9JGZqx9Vg3DeZOu90w9V//s5HooKk3ef6YV7grMbObRsAdKwdf5ftY97j4XokiLKDB0sobQH/f2qZrB3I7V98mz3LTI/2e9berU09z3yhw1C7DQQZZN77upC6JdLm4jlUlrjG/UcjlER9c2X63k8Y+KZDi/uZWx22p5ZYR2EbV1L61Eij1WpzXozkBuX0/p++8IaWe1xkmSUOkflb3d6t7991cDFalhs5wXJhUdizPZ1HCmYhVW+xCIsL3Ls6XKkccVjkW2timfvwBhJ9tl
+sidebar_class_name: "post api-method"
+info_path: OpenAPI/silvana-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Retrieve the nonce for an address"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/info/nonce"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+The `nonce` endpoint retrieves the nonce for a given Mina address, taking into account the pending transactions.
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"application/json":{"schema":{"type":"object","required":["address"],"properties":{"address":{"type":"string","description":"The Mina address for which to retrieve the nonce."}},"title":"NonceRequestParams"},"examples":{"getNonceRequest":{"summary":"Example of a nonce request","value":{"address":"B62qouKMtMcUxabk72vwZS7tY3XYEca1CPKgXPfznCHUiVjP9E6xxQz"}}}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful retrieval of nonce.","content":{"application/json":{"schema":{"type":"object","required":["address"],"properties":{"address":{"type":"string","description":"The Mina address for which the nonce was requested."},"nonce":{"type":"number","description":"The nonce for the specified address."},"hasAccount":{"type":"boolean","description":"Indicates whether the account exists."}},"title":"NonceResponse"},"examples":{"getNonceSuccess":{"summary":"Example of a successful nonce response","value":{"nonce":1,"address":"B62qouKMtMcUxabk72vwZS7tY3XYEca1CPKgXPfznCHUiVjP9E6xxQz","hasAccount":true}}}}}},"400":{"description":"Bad request - invalid input parameters.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"401":{"description":"Unauthorized - user not authenticated.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"403":{"description":"Forbidden - user doesn't have permission.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"429":{"description":"Too many requests.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"500":{"description":"Internal server error - something went wrong during the request.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"503":{"description":"Service unavailable - blockchain or other external service is down.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

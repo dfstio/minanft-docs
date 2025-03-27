@@ -1,0 +1,33 @@
+---
+id: tokeninfo
+title: "TokenInfo"
+description: ""
+sidebar_label: "TokenInfo"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"symbol":"string","name":"string","description":"string","imageUrl":"string","imageBase64":"string","twitter":"string","discord":"string","telegram":"string","instagram":"string","facebook":"string","website":"string","tokenContractCode":"string","adminContractsCode":["string"]}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"TokenInfo"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","properties":{"symbol":{"type":"string","description":"The symbol of the token."},"name":{"type":"string","description":"Optional. The name of the token."},"description":{"type":"string","description":"Optional. Description of the token."},"imageUrl":{"type":"string","format":"uri","description":"Optional. URL of the token image."},"imageBase64":{"type":"string","description":"Optional. Base64-encoded image data (max 1 MB)."},"twitter":{"type":"string","description":"Optional. Twitter handle associated with the token."},"discord":{"type":"string","description":"Optional. Discord link associated with the token."},"telegram":{"type":"string","description":"Optional. Telegram link associated with the token."},"instagram":{"type":"string","description":"Optional. Instagram handle associated with the token."},"facebook":{"type":"string","description":"Optional. Facebook page associated with the token."},"website":{"type":"string","format":"uri","description":"Optional. Official website of the token."},"tokenContractCode":{"type":"string","description":"Optional. Code for the token contract."},"adminContractsCode":{"type":"array","items":{"type":"string"},"description":"Optional. Code for the admin contracts."}},"title":"TokenInfo"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

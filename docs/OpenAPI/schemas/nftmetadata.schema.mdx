@@ -1,0 +1,33 @@
+---
+id: nftmetadata
+title: "NftMetadata"
+description: ""
+sidebar_label: "NftMetadata"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"name":"string","image":"string","description":"string","banner":"string","traits":[{"key":"string","type":"string","value":"string","isPrivate":true}]}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"NftMetadata"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","required":["name","image"],"properties":{"name":{"type":"string","description":"The name of the NFT"},"image":{"type":"string","description":"The image URL or IPFS hash associated with the NFT"},"description":{"type":"string","description":"Optional description of the NFT"},"banner":{"type":"string","description":"Optional banner image URL or IPFS hash. Required for Collection Master NFT."},"traits":{"type":"array","items":{"type":"object","required":["key","type","value"],"properties":{"key":{"type":"string","description":"The trait key/name"},"type":{"type":"string","enum":["string","text","image","url","field","number","address","map","tree"],"description":"The type of the trait value"},"value":{"oneOf":[{"type":"string"},{"type":"object"}],"description":"The trait value, can be a string or complex object depending on type"},"isPrivate":{"type":"boolean","description":"Optional flag indicating if this trait is private"}}}}},"title":"NftMetadata"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

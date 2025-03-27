@@ -1,0 +1,33 @@
+---
+id: tokenminttransactionparams
+title: "TokenMintTransactionParams"
+description: ""
+sidebar_label: "TokenMintTransactionParams"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"txType":"token:mint","tokenAddress":"string","sender":"string","senderPrivateKey":"string","nonce":0,"memo":"string","developerFee":0,"to":"string","amount":0,"price":0}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"TokenMintTransactionParams"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"allOf":[{"allOf":[{"type":"object","required":["sender"],"properties":{"txType":{"description":"Type of the token transaction.","type":"string","enum":["token:launch","token:mint","token:burn","token:redeem","token:transfer","token:bid:create","token:offer:create","token:offer:buy","token:bid:sell","token:airdrop","token:bid:withdraw","token:offer:withdraw","token:bid:whitelist","token:offer:whitelist","token:admin:whitelist"],"title":"TokenTransactionType"},"tokenAddress":{"type":"string","description":"Optional. The address of the token contract."},"sender":{"type":"string","description":"The address (public key) of the sender."},"senderPrivateKey":{"type":"string","description":"The private key of the sender. It is NOT recommended to use this field. Please use the `sender` field instead. Use this field at your own risk and only if you know what you are doing and do not have access to mina-signer or wallet to get the signature."},"nonce":{"type":"integer","format":"int64","description":"Optional. The nonce for the transaction."},"memo":{"type":"string","description":"Optional. A memo for the transaction."},"developerFee":{"type":"number","format":"double","description":"Optional. The developer fee for the transaction."}},"title":"TokenTransactionBaseParams"},{"type":"object","required":["tokenAddress"],"properties":{"tokenAddress":{"type":"string","description":"The address of the token contract."}}}],"title":"DeployedTokenTransactionBaseParams"},{"type":"object","required":["to","amount"],"properties":{"txType":{"type":"string","enum":["token:mint"],"description":"Must be \"token:mint\""},"to":{"type":"string","description":"The address to which tokens are to be minted."},"amount":{"type":"number","format":"double","description":"The amount of tokens to mint."},"price":{"type":"number","format":"double","description":"The price of the token in the bonding curve."}}}],"title":"TokenMintTransactionParams"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

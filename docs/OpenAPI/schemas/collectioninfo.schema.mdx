@@ -1,0 +1,33 @@
+---
+id: collectioninfo
+title: "CollectionInfo"
+description: ""
+sidebar_label: "CollectionInfo"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"contractType":"collection","collectionName":"string","collectionAddress":"string","tokenId":"string","symbol":"string","uri":"string","isPaused":true,"banner":"string","creator":"string","adminAddress":"string","baseURL":"string","royaltyFee":0,"transferFee":"string","requireTransferApproval":true,"mintingIsLimited":true,"collectionIsPaused":true,"masterNFT":{"type":"nft","contractType":"nft","tokenAddress":"string","collectionName":"string","collectionAddress":"string","collectionUri":"string","collectionSymbol":"string","collectionBaseURL":"string","symbol":"string","uri":"string","tokenId":"string","name":"string","image":"string","description":"string","metadataRoot":"string","storage":"string","metadataVerificationKeyHash":"string","owner":"string","approved":"string","approvedVerificationKeyHash":"string","approvedType":"string","version":0,"id":"string","canChangeOwnerByProof":true,"canTransfer":true,"canApprove":true,"canChangeMetadata":true,"canChangeStorage":true,"canChangeName":true,"canChangeMetadataVerificationKeyHash":true,"canPause":true,"isPaused":true,"requireOwnerAuthorizationToUpgrade":true,"metadata":{},"status":"string","rating":0,"updated":0,"created":0,"chain":"string","price":0,"likes":0,"contractVerificationKeyHash":"string","contractVersion":0},"contractVerificationKeyHash":"string","contractVersion":0,"chain":"string","updated":0,"created":0,"likes":0,"status":"string","rating":0}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"CollectionInfo"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","required":["contractType","collectionName","collectionAddress","symbol","uri","tokenId","creator","adminAddress","baseURL","royaltyFee","transferFee","requireTransferApproval","mintingIsLimited","collectionIsPaused","masterNFT","contractVerificationKeyHash","contractVersion","chain","isPaused","status","rating","updated","created"],"properties":{"contractType":{"type":"string","enum":["collection"]},"collectionName":{"type":"string"},"collectionAddress":{"type":"string"},"tokenId":{"type":"string"},"symbol":{"type":"string"},"uri":{"type":"string"},"isPaused":{"type":"boolean"},"banner":{"type":"string"},"creator":{"type":"string"},"adminAddress":{"type":"string"},"baseURL":{"type":"string"},"royaltyFee":{"type":"number"},"transferFee":{"type":"string"},"requireTransferApproval":{"type":"boolean"},"mintingIsLimited":{"type":"boolean"},"collectionIsPaused":{"type":"boolean"},"masterNFT":{"type":"object","required":["type","contractType","tokenAddress","collectionName","collectionAddress","symbol","uri","tokenId","name","image","metadataRoot","storage","metadataVerificationKeyHash","owner","version","id","canChangeOwnerByProof","canTransfer","canApprove","canChangeMetadata","canChangeStorage","canChangeName","canChangeMetadataVerificationKeyHash","canPause","isPaused","requireOwnerAuthorizationToUpgrade","metadata","status","rating","updated","created","chain","contractVerificationKeyHash","contractVersion"],"properties":{"type":{"type":"string","enum":["nft","collection"]},"contractType":{"type":"string","enum":["nft"]},"tokenAddress":{"type":"string"},"collectionName":{"type":"string"},"collectionAddress":{"type":"string"},"collectionUri":{"type":"string","description":"The URI of the collection."},"collectionSymbol":{"type":"string","description":"The symbol of the collection."},"collectionBaseURL":{"type":"string","description":"The base URL of the collection."},"symbol":{"type":"string"},"uri":{"type":"string"},"tokenId":{"type":"string"},"name":{"type":"string"},"image":{"type":"string"},"description":{"type":"string"},"metadataRoot":{"type":"string"},"storage":{"type":"string"},"metadataVerificationKeyHash":{"type":"string"},"owner":{"type":"string"},"approved":{"type":"string"},"approvedVerificationKeyHash":{"type":"string"},"approvedType":{"type":"string"},"version":{"type":"number"},"id":{"type":"string"},"canChangeOwnerByProof":{"type":"boolean"},"canTransfer":{"type":"boolean"},"canApprove":{"type":"boolean"},"canChangeMetadata":{"type":"boolean"},"canChangeStorage":{"type":"boolean"},"canChangeName":{"type":"boolean"},"canChangeMetadataVerificationKeyHash":{"type":"boolean"},"canPause":{"type":"boolean"},"isPaused":{"type":"boolean"},"requireOwnerAuthorizationToUpgrade":{"type":"boolean"},"metadata":{"type":"object"},"status":{"type":"string"},"rating":{"type":"number"},"updated":{"type":"number"},"created":{"type":"number"},"chain":{"type":"string"},"price":{"type":"number"},"likes":{"type":"number"},"contractVerificationKeyHash":{"type":"string","description":"The verification key hash of the contract."},"contractVersion":{"type":"integer","format":"int32","description":"The version number of the contract."}},"title":"NFTInfo"},"contractVerificationKeyHash":{"type":"string","description":"The verification key hash of the contract."},"contractVersion":{"type":"integer","format":"int32","description":"The version number of the contract."},"chain":{"type":"string"},"updated":{"type":"number"},"created":{"type":"number"},"likes":{"type":"number"},"status":{"type":"string"},"rating":{"type":"number"}},"title":"CollectionInfo"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

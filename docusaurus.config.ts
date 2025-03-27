@@ -2,6 +2,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 import path from "node:path";
+import type * as OpenApiPlugin from "docusaurus-plugin-openapi-docs";
 
 const config: Config = {
   title: "MinaNFT",
@@ -47,15 +48,47 @@ const config: Config = {
     [
       "docusaurus-plugin-typedoc-api",
       {
-        projectRoot: path.join(__dirname, "../nft-standard-draft"),
-        packages: ["."],
-        banner: "NFT standard",
+        projectRoot: path.join(__dirname, ""),
+        packages: [
+          "silvana-lib/packages/nft",
+          "silvana-lib/packages/api",
+          "silvana-lib/packages/abi",
+          "silvana-lib/packages/storage",
+          "silvana-lib/packages/upgradable",
+          "silvana-lib/packages/mina-utils",
+          "silvana-lib/packages/mina-prover",
+          "silvana-lib/packages/mina-curves",
+          "silvana-lib/packages/prover",
+        ],
+        banner: "NFT standard library",
         typedocOptions: {
           excludeExternals: true,
         },
       },
     ],
+    [
+      "docusaurus-plugin-openapi-docs",
+      {
+        id: "openapi", // plugin   id
+        docsPluginId: "@docusaurus/preset-classic", // configured for preset-classic
+        config: {
+          silvana: {
+            specPath: "silvana-lib/packages/api/open-api.yaml",
+            //specPath: "openapi/open-api.yaml",
+            outputDir: "docs/OpenAPI",
+            sidebarOptions: {
+              groupPathsBy: "tag",
+            },
+            showSchemas: true,
+          } satisfies OpenApiPlugin.Options,
+        },
+      },
+    ],
   ],
+  markdown: {
+    mermaid: true,
+  },
+  themes: ["docusaurus-theme-openapi-docs", "@docusaurus/theme-mermaid"],
   presets: [
     [
       "@docusaurus/preset-classic",
@@ -63,19 +96,70 @@ const config: Config = {
         docs: {
           sidebarPath: "./sidebars.ts",
           routeBasePath: "/",
+          docItemComponent: "@theme/ApiItem",
         },
         blog: false,
         theme: {
           customCss: "./src/css/custom.css",
         },
-        googleTagManager: {
-          containerId: "G-7VMTL8FVEL", //'GTM-WZ4G3MFW',
+        gtag: {
+          trackingID: "G-7VMTL8FVEL",
+          anonymizeIP: false,
         },
       } satisfies Preset.Options,
     ],
   ],
 
   themeConfig: {
+    languageTabs: [
+      {
+        highlight: "bash",
+        language: "curl",
+        logoClass: "curl",
+      },
+      {
+        highlight: "javascript",
+        language: "javascript",
+        logoClass: "javascript",
+      },
+      {
+        highlight: "javascript",
+        language: "nodejs",
+        logoClass: "nodejs",
+      },
+      {
+        highlight: "python",
+        language: "python",
+        logoClass: "python",
+      },
+      {
+        highlight: "rust",
+        language: "rust",
+        logoClass: "rust",
+      },
+      {
+        highlight: "ocaml",
+        language: "ocaml",
+        logoClass: "ocaml",
+      },
+      {
+        highlight: "go",
+        language: "go",
+        logoClass: "go",
+      },
+
+      {
+        highlight: "java",
+        language: "java",
+        logoClass: "java",
+        variant: "unirest",
+      },
+      {
+        highlight: "powershell",
+        language: "powershell",
+        logoClass: "powershell",
+      },
+    ],
     // Replace with your project's social card
     image: "img/minanft-logo.png",
     algolia: {
@@ -105,7 +189,7 @@ const config: Config = {
       items: [
         {
           type: "docSidebar",
-          sidebarId: "tutorialSidebar",
+          sidebarId: "docsSidebar",
           position: "left",
           label: "Docs",
         },
@@ -128,13 +212,14 @@ const config: Config = {
           position: "left",
         },
         {
-          href: "https://docs.minanft.io/coverage",
-          label: "Coverage",
+          type: "docSidebar",
+          sidebarId: "apiSidebar",
           position: "left",
+          label: "OpenAPI",
         },
         {
-          href: "https://docs.minatokens.com",
-          label: "MinaTokens API",
+          href: "https://docs.minanft.io/coverage",
+          label: "Coverage",
           position: "left",
         },
         // {
@@ -142,16 +227,16 @@ const config: Config = {
         //   label: "@MinaNFT_bot",
         //   position: "right",
         // },
-        // {
-        //   href: "https://github.com/dfstio/minanft-lib",
-        //   label: "GitHub",
-        //   position: "right",
-        // },
-        // {
-        //   href: "https://www.npmjs.com/package/minanft",
-        //   label: "NPM",
-        //   position: "right",
-        // },
+        {
+          href: "https://github.com/SilvanaOne/silvana-lib",
+          label: "GitHub",
+          position: "right",
+        },
+        {
+          href: "https://www.npmjs.com/package/@silvana-one/nft",
+          label: "NPM",
+          position: "right",
+        },
       ],
     },
     footer: {
@@ -161,7 +246,7 @@ const config: Config = {
           title: "Docs",
           items: [
             {
-              label: "Illustrated Tutorial",
+              label: "Docs",
               to: "/",
             },
             {
@@ -208,7 +293,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} DFST. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} DFST`,
     },
     prism: {
       theme: prismThemes.github,

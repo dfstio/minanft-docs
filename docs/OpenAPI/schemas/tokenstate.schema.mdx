@@ -1,0 +1,33 @@
+---
+id: tokenstate
+title: "TokenState"
+description: ""
+sidebar_label: "TokenState"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"tokenAddress":"string","tokenId":"string","adminContractAddress":"string","adminAddress":"string","adminTokenBalance":0,"totalSupply":0,"isPaused":true,"decimals":0,"tokenSymbol":"string","verificationKeyHash":"string","uri":"string","version":0,"adminTokenSymbol":"string","adminUri":"string","adminVerificationKeyHash":"string","adminVersion":0}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"TokenState"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","required":["tokenAddress","tokenId","adminContractAddress","adminAddress","adminTokenBalance","totalSupply","isPaused","decimals","tokenSymbol","verificationKeyHash","uri","version","adminTokenSymbol","adminUri","adminVerificationKeyHash","adminVersion"],"properties":{"tokenAddress":{"type":"string","description":"The address of the token contract."},"tokenId":{"type":"string","description":"The unique identifier of the token."},"adminContractAddress":{"type":"string","description":"The address of the admin contract."},"adminAddress":{"type":"string","description":"The address of the administrator."},"adminTokenBalance":{"type":"number","format":"double","description":"The token balance of the administrator."},"totalSupply":{"type":"number","format":"double","description":"The total supply of the token."},"isPaused":{"type":"boolean","description":"Indicates if the token contract is paused."},"decimals":{"type":"integer","format":"int32","description":"The number of decimal places the token uses."},"tokenSymbol":{"type":"string","description":"The symbol of the token."},"verificationKeyHash":{"type":"string","description":"The verification key hash of the token contract."},"uri":{"type":"string","description":"The URI of the token metadata."},"version":{"type":"integer","format":"int32","description":"The version number of the token contract."},"adminTokenSymbol":{"type":"string","description":"The symbol of the admin token."},"adminUri":{"type":"string","description":"The URI of the admin token metadata."},"adminVerificationKeyHash":{"type":"string","description":"The verification key hash of the admin contract."},"adminVersion":{"type":"integer","format":"int32"}},"title":"TokenState"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

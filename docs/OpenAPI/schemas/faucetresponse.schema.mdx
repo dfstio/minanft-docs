@@ -1,0 +1,33 @@
+---
+id: faucetresponse
+title: "FaucetResponse"
+description: ""
+sidebar_label: "FaucetResponse"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"success":true,"hash":"string","error":"string"}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"FaucetResponse"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","properties":{"success":{"type":"boolean","description":"Indicates whether the faucet request was successful."},"hash":{"type":"string","description":"The transaction hash of the faucet transfer if successful."},"error":{"type":"string","description":"Error message if the request failed."}},"title":"FaucetResponse"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

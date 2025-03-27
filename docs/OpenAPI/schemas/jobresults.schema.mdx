@@ -1,0 +1,33 @@
+---
+id: jobresults
+title: "JobResults"
+description: ""
+sidebar_label: "JobResults"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"success":true,"jobStatus":"created","error":"string","results":[{"success":true,"error":"string","tx":"string","status":"string","hash":"string"}]}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"JobResults"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","properties":{"success":{"type":"boolean","description":"Indicates whether the job was successful."},"jobStatus":{"type":"string","enum":["created","started","finished","failed","used","restarted"],"description":"The current status of the job."},"error":{"type":"string","description":"Error message if the job failed."},"results":{"type":"array","items":{"type":"object","required":["success"],"properties":{"success":{"type":"boolean","description":"Indicates whether the proof generation for this transaction was successful."},"error":{"type":"string","description":"Error message if proof generation failed for this transaction."},"tx":{"type":"string","description":"The transaction data."},"status":{"type":"string","description":"The status of the transaction."},"hash":{"type":"string","description":"The transaction hash if broadcasted."}},"title":"JobResult"},"description":"Results for each transaction in the job."}},"title":"JobResults"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

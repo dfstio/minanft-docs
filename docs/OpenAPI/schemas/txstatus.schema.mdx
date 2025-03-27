@@ -1,0 +1,33 @@
+---
+id: txstatus
+title: "TxStatus"
+description: ""
+sidebar_label: "TxStatus"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"blockHeight":0,"stateHash":"string","blockStatus":"string","timestamp":0,"txHash":"string","txStatus":"string"}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"TxStatus"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","properties":{"blockHeight":{"type":"integer","format":"int64","description":"The height of the block containing the transaction."},"stateHash":{"type":"string","description":"The state hash of the block."},"blockStatus":{"type":"string","description":"The status of the block."},"timestamp":{"type":"integer","format":"int64","description":"The timestamp of the block."},"txHash":{"type":"string","description":"The transaction hash."},"txStatus":{"type":"string","description":"The status of the transaction in the block."}},"title":"TxStatus"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

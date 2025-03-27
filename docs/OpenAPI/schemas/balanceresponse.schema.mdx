@@ -1,0 +1,33 @@
+---
+id: balanceresponse
+title: "BalanceResponse"
+description: ""
+sidebar_label: "BalanceResponse"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"tokenAddress":"string","tokenId":"string","address":"string","balance":0,"hasAccount":true}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"BalanceResponse"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","required":["address"],"properties":{"tokenAddress":{"type":"string","description":"The address of the token contract (optional)."},"tokenId":{"type":"string","description":"The token ID (optional)."},"address":{"type":"string","description":"The Mina address for which the balance was requested."},"balance":{"type":"number","description":"The balance of the token for the specified address."},"hasAccount":{"type":"boolean","description":"Indicates whether the account exists."}},"title":"BalanceResponse"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            
