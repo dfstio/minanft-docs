@@ -57,6 +57,7 @@ const config: Config = {
           "silvana-lib/packages/upgradable",
           "silvana-lib/packages/mina-utils",
           "silvana-lib/packages/mina-prover",
+          "silvana-lib/packages/mina-curves",
           "silvana-lib/packages/prover",
         ],
         banner: "NFT standard library",
