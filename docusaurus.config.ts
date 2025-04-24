@@ -161,7 +161,7 @@ const config: Config = {
       },
     ],
     // Replace with your project's social card
-    image: "img/minanft-logo.png",
+    image: "img/minanft3.png",
     algolia: {
       // The application ID provided by Algolia
       appId: "FNFWWBB84O",
@@ -184,7 +184,7 @@ const config: Config = {
       title: "MinaNFT",
       logo: {
         alt: "MinaNFT Logo",
-        src: "img/minanft.png",
+        src: "img/minanft3.png",
       },
       items: [
         {

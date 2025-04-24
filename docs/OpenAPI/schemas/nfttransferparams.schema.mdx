@@ -25,7 +25,7 @@ import Heading from "@theme/Heading";
 
 
 <Schema
-  schema={{"type":"object","required":["from","to"],"properties":{"from":{"type":"string","description":"The address of the owner or approved"},"to":{"type":"string","description":"The address of the recipient"},"price":{"type":"number","description":"The price of the NFT being transferred"},"requireApproval":{"type":"boolean","description":"If true, the transfer requires approval from the admin contract"},"context":{"type":"object","description":"The custom context for the transfer","properties":{"custom":{"type":"array","size":3,"items":{"type":"string"},"description":"The custom context for the transfer, 3 Fields"}}}},"title":"NftTransferParams"}}
+  schema={{"type":"object","required":["to"],"properties":{"from":{"type":"string","description":"The address of the owner or approved"},"to":{"type":"string","description":"The address of the recipient"},"price":{"type":"number","description":"The price of the NFT being transferred"},"requireApproval":{"type":"boolean","description":"If true, the transfer requires approval from the admin contract"},"context":{"type":"object","description":"The custom context for the transfer","properties":{"custom":{"type":"array","size":3,"items":{"type":"string"},"description":"The custom context for the transfer, 3 Fields"}}}},"title":"NftTransferParams"}}
   schemaType={"response"}
 >
   

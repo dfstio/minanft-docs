@@ -210,6 +210,24 @@ const sidebar: SidebarsConfig = {
         },
         {
           type: "doc",
+          id: "OpenAPI/cms-store-nft",
+          label: "Store on-demand NFT in CMS",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "OpenAPI/cms-read-nft",
+          label: "Read on-demand NFT from CMS",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "OpenAPI/cms-reserve-nft",
+          label: "Reserve or remove reserve of on-demand NFT in CMS",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
           id: "OpenAPI/approve-nft",
           label: "Approve a specified address to transfer NFT.",
           className: "api-method post",
@@ -476,6 +494,18 @@ const sidebar: SidebarsConfig = {
           type: "doc",
           id: "OpenAPI/schemas/nftdata",
           label: "NftData",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "OpenAPI/schemas/trait",
+          label: "Trait",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "OpenAPI/schemas/cmsnftdata",
+          label: "CMSNFTData",
           className: "schema",
         },
         {

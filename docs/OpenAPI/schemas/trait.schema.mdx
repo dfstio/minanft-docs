@@ -1,0 +1,33 @@
+---
+id: trait
+title: "Trait"
+description: ""
+sidebar_label: "Trait"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"key":"string","type":"string","value":"string","isPrivate":true}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Trait"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","required":["key","type","value"],"properties":{"key":{"type":"string","description":"The trait key/name"},"type":{"type":"string","enum":["string","text","image","url","field","number","address","map","tree"],"description":"The type of the trait value"},"value":{"oneOf":[{"type":"string"},{"type":"object"}],"description":"The trait value, can be a string or complex object depending on type"},"isPrivate":{"type":"boolean","description":"Optional flag indicating if this trait is private"}},"title":"Trait"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

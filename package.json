@@ -5,7 +5,7 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
-    "build": "git submodule update --init --recursive && docusaurus clean-api-docs all && docusaurus gen-api-docs all && docusaurus build",
+    "build": "docusaurus clean-api-docs all && docusaurus gen-api-docs all && docusaurus build",
     "openapi:build": "docusaurus gen-api-docs all",
     "openapi:clean": "docusaurus clean-api-docs all",
     "swizzle": "docusaurus swizzle",

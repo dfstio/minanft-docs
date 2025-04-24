@@ -1,0 +1,33 @@
+---
+id: cmsnftdata
+title: "CMSNFTData"
+description: ""
+sidebar_label: "CMSNFTData"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"collectionAddress":"string","symbol":"string","name":"string","description":"string","imageURL":"string","traits":[{"key":"string","type":"string","value":"string","isPrivate":true}],"nftData":{"owner":"string","approved":"string","version":0,"id":"string","canChangeOwnerByProof":true,"canTransfer":true,"canApprove":true,"canChangeMetadata":true,"canChangeStorage":true,"canChangeName":true,"canChangeMetadataVerificationKeyHash":true,"canPause":true,"isPaused":true,"requireOwnerAuthorizationToUpgrade":true},"price":0,"mintStart":0,"mintEnd":0}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"CMSNFTData"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","required":["collectionAddress","name","imageURL"],"properties":{"collectionAddress":{"type":"string","description":"The address of the NFT collection"},"symbol":{"type":"string","description":"The symbol of the NFT"},"name":{"type":"string","description":"The name of the NFT"},"description":{"type":"string","description":"Optional description of the NFT"},"imageURL":{"type":"string","description":"URL to the NFT image"},"traits":{"type":"array","items":{"type":"object","required":["key","type","value"],"properties":{"key":{"type":"string","description":"The trait key/name"},"type":{"type":"string","enum":["string","text","image","url","field","number","address","map","tree"],"description":"The type of the trait value"},"value":{"oneOf":[{"type":"string"},{"type":"object"}],"description":"The trait value, can be a string or complex object depending on type"},"isPrivate":{"type":"boolean","description":"Optional flag indicating if this trait is private"}},"title":"Trait"},"description":"Array of traits associated with the NFT"},"nftData":{"description":"Data associated with the NFT","type":"object","properties":{"owner":{"type":"string","description":"The public key of the owner of the NFT"},"approved":{"type":"string","description":"The public key of the approved address of the NFT"},"version":{"type":"integer","format":"int32","description":"The version number of the NFT state"},"id":{"type":"string","description":"The unique identifier of the NFT within the collection. A bigint encoded as a string."},"canChangeOwnerByProof":{"type":"boolean","description":"Determines whether the NFT's ownership can be changed via a zero-knowledge proof (readonly)"},"canTransfer":{"type":"boolean","description":"Specifies if the NFT's ownership can be transferred (readonly)"},"canApprove":{"type":"boolean","description":"Specifies if the NFT's approved address can be changed (readonly)"},"canChangeMetadata":{"type":"boolean","description":"Indicates whether the NFT's metadata can be updated (readonly)"},"canChangeStorage":{"type":"boolean","description":"Determines whether the storage associated with the NFT can be altered (readonly)"},"canChangeName":{"type":"boolean","description":"Specifies if the name of the NFT can be changed (readonly)"},"canChangeMetadataVerificationKeyHash":{"type":"boolean","description":"Indicates whether the verification key hash for the metadata can be changed (readonly)"},"canPause":{"type":"boolean","description":"Specifies if the NFT contract can be paused, preventing certain operations (readonly)"},"isPaused":{"type":"boolean","description":"Indicates whether the NFT contract is currently paused"},"requireOwnerAuthorizationToUpgrade":{"type":"boolean","description":"Determines whether the owner's authorization is required to upgrade the NFT's verification key (readonly)"}},"title":"NftData"},"price":{"type":"number","format":"double","description":"The price of the NFT"},"mintStart":{"type":"number","format":"int64","description":"The start time of the minting period( unix timestamp in ms)"},"mintEnd":{"type":"number","format":"int64","description":"The end time of the minting period( unix timestamp in ms)"}},"title":"CMSNFTData"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            
